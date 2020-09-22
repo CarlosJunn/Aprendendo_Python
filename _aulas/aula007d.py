@@ -1,4 +1,4 @@
-m = int(input('Digite um valor em metros:'))
+m = float(input('Digite um valor em metros:'))
 cm = m * 100
-mil = m * 1000
-print('Valor em centímetros: {}\nValor em milímetros: {}'.format(cm,mil))
+mm = m * 1000
+print('Valor em centímetros: {:.2f}\nValor em milímetros: {:.2f}'.format(cm,mm))
