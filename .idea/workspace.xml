@@ -20,6 +20,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e937b08-838f-4932-be7c-325e3d499a35" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/_ED/aula001a.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ED/aula001b.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ED/aula002a.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_apoio/O tipo abstrato de dados pilha.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki_files/1x1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki_files/34109fe397fdcff370079185bfdb65826cb5565a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki_files/360_light.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki_files/a601995d55609f2d9f5e233e36fbe9ea26011b3b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki_files/consent_220206_V3.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki_files/e66384bc40452c5452f33563fe0e27e803b0cc21" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki_files/favicon-96x96.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki_files/gpt.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki_files/jquery.min.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki_files/loader.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki_files/my.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki_files/native.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki_files/pubads_impl_2020100601.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki_files/qwerty.wiki.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki_files/saved_resource.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki_files/tag.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_apoio/implementando uma pilha em python.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_aulas/FIFO.LIFO.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,8 +77,8 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.ex014">
-    <configuration name="aula008a" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.aula002a">
+    <configuration name="aula001a" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Aprendendo_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -63,11 +86,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/_aulas" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/_ED" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_aulas/aula008a.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_ED/aula001a.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -76,7 +99,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ex011" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="aula001b" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Aprendendo_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -84,11 +107,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/_aulas" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/_ED" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_aulas/ex011.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_ED/aula001b.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -97,7 +120,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ex012" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="aula002a" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Aprendendo_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -105,11 +128,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/_aulas" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/_ED" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_aulas/ex012.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_ED/aula002a.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -162,11 +185,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.aula002a" />
+        <item itemvalue="Python.aula001b" />
+        <item itemvalue="Python.aula001a" />
         <item itemvalue="Python.ex014" />
         <item itemvalue="Python.ex013" />
-        <item itemvalue="Python.ex012" />
-        <item itemvalue="Python.ex011" />
-        <item itemvalue="Python.aula008a" />
       </list>
     </recent_temporary>
   </component>
@@ -214,32 +237,36 @@
       <screen x="-1366" y="275" width="1366" height="728" />
     </state>
     <state x="-1057" y="317" key="#Inspections/-1366.275.1366.728/0.0.1680.1010@-1366.275.1366.728" timestamp="1600976443456" />
+    <state x="-1003" y="375" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1602181686186">
+      <screen x="-1366" y="275" width="1366" height="728" />
+    </state>
+    <state x="-1003" y="375" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/-1366.275.1366.728/0.0.1680.1010@-1366.275.1366.728" timestamp="1602181686186" />
     <state x="462" y="119" key="FileChooserDialogImpl" timestamp="1600221385649">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="462" y="119" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1600221385649" />
-    <state width="1345" height="179" key="GridCell.Tab.0.bottom" timestamp="1601651726336">
+    <state width="1345" height="179" key="GridCell.Tab.0.bottom" timestamp="1602266953003">
       <screen x="-1366" y="275" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.bottom/-1366.275.1366.728/0.0.1680.1010@-1366.275.1366.728" timestamp="1601651726336" />
+    <state width="1345" height="179" key="GridCell.Tab.0.bottom/-1366.275.1366.728/0.0.1680.1010@-1366.275.1366.728" timestamp="1602266953003" />
     <state width="1323" height="113" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1600910320053" />
     <state width="1317" height="144" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1360.728@1366.0.1360.728" timestamp="1600474695285" />
-    <state width="1345" height="179" key="GridCell.Tab.0.center" timestamp="1601651726336">
+    <state width="1345" height="179" key="GridCell.Tab.0.center" timestamp="1602266953003">
       <screen x="-1366" y="275" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.center/-1366.275.1366.728/0.0.1680.1010@-1366.275.1366.728" timestamp="1601651726336" />
+    <state width="1345" height="179" key="GridCell.Tab.0.center/-1366.275.1366.728/0.0.1680.1010@-1366.275.1366.728" timestamp="1602266953003" />
     <state width="1323" height="113" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1600910320053" />
     <state width="1317" height="144" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1360.728@1366.0.1360.728" timestamp="1600474695285" />
-    <state width="1345" height="179" key="GridCell.Tab.0.left" timestamp="1601651726336">
+    <state width="1345" height="179" key="GridCell.Tab.0.left" timestamp="1602266953003">
       <screen x="-1366" y="275" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.left/-1366.275.1366.728/0.0.1680.1010@-1366.275.1366.728" timestamp="1601651726336" />
+    <state width="1345" height="179" key="GridCell.Tab.0.left/-1366.275.1366.728/0.0.1680.1010@-1366.275.1366.728" timestamp="1602266953003" />
     <state width="1323" height="113" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1600910320053" />
     <state width="1317" height="144" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1360.728@1366.0.1360.728" timestamp="1600474695284" />
-    <state width="1345" height="179" key="GridCell.Tab.0.right" timestamp="1601651726336">
+    <state width="1345" height="179" key="GridCell.Tab.0.right" timestamp="1602266953003">
       <screen x="-1366" y="275" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.right/-1366.275.1366.728/0.0.1680.1010@-1366.275.1366.728" timestamp="1601651726336" />
+    <state width="1345" height="179" key="GridCell.Tab.0.right/-1366.275.1366.728/0.0.1680.1010@-1366.275.1366.728" timestamp="1602266953003" />
     <state width="1323" height="113" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1600910320053" />
     <state width="1317" height="144" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1360.728@1366.0.1360.728" timestamp="1600474695285" />
     <state x="-1182" y="284" key="SettingsEditor" timestamp="1600976366278">

@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)https://pt.qaz.wiki/wiki/Double-ended_queue -->
+<html lang="pt"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="./deque - Double-ended queue - qaz.wiki_files/qwerty.wiki.css">
+<script async="" src="./deque - Double-ended queue - qaz.wiki_files/tag.js.download"></script><script src="./deque - Double-ended queue - qaz.wiki_files/jquery.min.js.download"></script>
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>deque - Double-ended queue - qaz.wiki</title>
+
+<link rel="apple-touch-icon" sizes="57x57" href="https://pt.qaz.wiki/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://pt.qaz.wiki/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://pt.qaz.wiki/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://pt.qaz.wiki/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://pt.qaz.wiki/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://pt.qaz.wiki/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://pt.qaz.wiki/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://pt.qaz.wiki/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://pt.qaz.wiki/apple-icon-180x180.png">
+<link rel="mask-icon" href="https://pt.qaz.wiki/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="icon" type="image/png" sizes="192x192" href="https://pt.qaz.wiki/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://pt.qaz.wiki/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="./deque - Double-ended queue - qaz.wiki_files/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://pt.qaz.wiki/favicon-16x16.png">
+<link rel="manifest" href="https://pt.qaz.wiki/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(55254025, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/55254025" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+
+
+
+<!-- ADV -->
+<script async="" type="text/javascript" src="./deque - Double-ended queue - qaz.wiki_files/consent_220206_V3.js.download"></script><script src="./deque - Double-ended queue - qaz.wiki_files/my.js.download"></script><script async="" src="./deque - Double-ended queue - qaz.wiki_files/native.js.download"></script>
+<script async="" type="text/javascript" src="./deque - Double-ended queue - qaz.wiki_files/360_light.js.download"></script>
+<script src="./deque - Double-ended queue - qaz.wiki_files/loader.js.download" crossorigin="anonymous" async=""></script>
+<!-- GA: false-->
+<!-- /ADV -->
+
+<script type="text/javascript" src="./deque - Double-ended queue - qaz.wiki_files/gpt.js.download" class=""></script><script src="./deque - Double-ended queue - qaz.wiki_files/pubads_impl_2020100601.js.download" async=""></script><script async="" src="https://dihlw.com/v1/sdk.js?h=waWQiOjEwMDU0MjcsInNpZCI6MTAxMjkzMSwid2lkIjoxMzE4MTEsInNyYyI6Mn0=eyJ&amp;d=qaz.wiki&amp;sw=evasw.js"></script></head>
+
+<!-- Desktop version -->
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable">
+
+
+<!-- CLICKIO AdFox unit 651566 -->
+<div id="adfox_157546550881883587"></div>
+<script>
+    (function(w, n) {
+w[n] = w[n] || [];
+w[n].push([{
+        ownerId: 257193,
+        containerId: 'adfox_157546550881883587',
+        params: {
+            pp: 'wxi',
+            ps: 'dszq',
+            p2: 'gnsj'
+        }
+    }, [ 'phone'], {
+        tabletWidth: 1024,
+        phoneWidth: 767,
+        isAutoReloads: false
+    }]);})(window, 'adfoxAsyncParamsAdaptive');
+</script>
+<div id="lx_671635" data-cnt="1" class="__lxG__multi __lxG__multi_lx_671635"></div><script class="__lxGc__" type="text/javascript" data-cnt="1">
+((__lxGc__=window.__lxGc__||{'s':{},'b':0})['s']['_220206']=__lxGc__['s']['_220206']||{'b':{}})['b']['_671635']={'i':__lxGc__.b++};
+</script>
+<div id="lx_671632" data-cnt="1" class="__lxG__multi __lxG__multi_lx_671632"><a id="lx_home_button" href="https://clickio.com/?utm_source=qwe.wiki&amp;utm_medium=adunit_label&amp;utm_campaign=hor_sticky_desktop" target="_blank" title="">
+    Ads by
+    <svg width="42" height="14" viewBox="0 0 42 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12.4002 0.0638104C13.1396 0.0638104 13.7622 0.638104 13.7622 1.3783C13.7622 2.14403 13.1396 2.71832 12.4002 2.71832C11.6609 2.71832 11.0383 2.13127 11.0383 1.3783C11.0513 0.650866 11.6739 0.0638104 12.4002 0.0638104Z" fill="#48647F"></path>
+        <path d="M0 7.03191C0 4.95169 1.53057 3.48405 3.64484 3.48405C4.53984 3.48405 5.29216 3.79034 5.91476 4.33911C5.68128 4.90064 5.43484 5.43665 5.20136 5.99818C4.8252 5.58979 4.37122 5.34731 3.83941 5.34731C2.87956 5.34731 2.29586 6.01094 2.29586 7.03191C2.29586 8.02735 2.87956 8.7165 3.87832 8.7165C4.47498 8.7165 4.86411 8.46126 5.21433 8.10392C5.43484 8.67822 5.68128 9.22699 5.90179 9.80128C5.29216 10.299 4.60469 10.6053 3.63187 10.6053C1.54355 10.6053 0 9.20146 0 7.03191Z" fill="#48647F"></path>
+        <path d="M11.2588 3.66272H13.5547V10.4011H11.2588V3.66272Z" fill="#48647F"></path>
+        <path d="M14.7869 7.03191C14.7869 4.95169 16.3175 3.48405 18.4317 3.48405C19.3267 3.48405 20.092 3.79034 20.7017 4.33911C20.4682 4.90064 20.2217 5.43665 19.9883 5.99818C19.6121 5.58979 19.1581 5.34731 18.6263 5.34731C17.6665 5.34731 17.0698 6.01094 17.0698 7.03191C17.0698 8.02735 17.6535 8.7165 18.6523 8.7165C19.2489 8.7165 19.638 8.46126 19.9883 8.10392C20.2088 8.67822 20.4552 9.22699 20.6757 9.80128C20.0661 10.299 19.3786 10.6053 18.4058 10.6053C16.3305 10.6053 14.7869 9.20146 14.7869 7.03191Z" fill="#48647F"></path>
+        <path d="M32.0124 0.0638104C32.7517 0.0638104 33.3743 0.638104 33.3743 1.3783C33.3743 2.14403 32.7517 2.71832 32.0124 2.71832C31.273 2.71832 30.6504 2.13127 30.6504 1.3783C30.6504 0.650866 31.286 0.0638104 32.0124 0.0638104ZM30.8579 3.66272H33.1538V10.4011H30.8579V3.66272Z" fill="#48647F"></path>
+        <path d="M38.1995 10.6053C36.0593 10.6053 34.399 9.04832 34.399 7.04467C34.399 5.0155 36.0593 3.48405 38.1995 3.48405C40.3397 3.48405 42 5.02826 42 7.04467C42 9.07384 40.3527 10.6053 38.1995 10.6053ZM38.1995 5.3856C37.2786 5.3856 36.7078 6.04923 36.7078 7.04467C36.7078 8.04011 37.2786 8.70374 38.1995 8.70374C39.1204 8.70374 39.6912 8.04011 39.6912 7.04467C39.6912 6.04923 39.1204 5.3856 38.1995 5.3856Z" fill="#48647F"></path>
+        <path d="M38.1995 11.3455C38.9389 11.3455 39.5615 11.9198 39.5615 12.66C39.5615 13.4257 38.9389 14 38.1995 14C37.4602 14 36.8376 13.4129 36.8376 12.66C36.8505 11.9198 37.4731 11.3455 38.1995 11.3455Z" fill="#48647F"></path>
+        <path d="M7.04324 0H9.3391V10.4011H7.04324V0Z" fill="#48647F"></path>
+        <path d="M29.1587 9.30356C28.8993 8.89517 28.6269 8.49955 28.3156 8.09116C28.0043 7.68277 27.693 7.29991 27.3687 6.91705C27.1872 6.71285 27.0185 6.52142 26.8499 6.35552C27.0185 6.17685 27.2001 5.99818 27.3687 5.79398C27.693 5.41112 28.0173 5.02826 28.3156 4.61987C28.6269 4.21149 28.8993 3.81586 29.1587 3.40748C29.1977 3.35643 29.2236 3.30538 29.2495 3.25433C28.6918 3.02461 27.8098 2.65451 27.1223 2.37375C26.9666 2.61623 26.798 2.87147 26.6164 3.165C26.4089 3.48405 26.1884 3.8031 25.9549 4.12215C25.7214 4.4412 25.475 4.74749 25.2156 5.04102C24.9561 5.33455 24.6967 5.57703 24.4373 5.78122V0H22.1414V10.4011H24.4373V6.91705C24.6967 7.12124 24.9561 7.36372 25.2156 7.65725C25.475 7.95078 25.7214 8.25706 25.9549 8.57612C26.1884 8.89517 26.4089 9.21422 26.6164 9.53327C26.824 9.85232 27.0185 10.1459 27.1742 10.4011H29.8073C29.6387 10.0693 29.4182 9.69918 29.1587 9.30356Z" fill="#48647F"></path>
+        <path d="M32.0253 0.0638104C32.7647 0.0638104 33.3873 0.638104 33.3873 1.3783C33.3873 2.14403 32.7647 2.71832 32.0253 2.71832C31.286 2.71832 30.6634 2.13127 30.6634 1.3783C30.6763 0.650866 31.299 0.0638104 32.0253 0.0638104Z" fill="#48647F"></path>
+    </svg>
+</a>
+<style>
+    :root {
+        --lx-bg-color: #F0F4F8;
+        --lx-cross-color: #48647F;
+    }
+
+    #lx_671632 {
+        width: 100%;
+        left: 0px;
+        z-index: 9999998;
+        position: fixed;
+        bottom: 0px;
+        background: transparent;
+        text-align: center;
+        transition: 300ms ease-in;
+        line-height: 0px;
+    }
+
+    #lx_671632 #lx_close_button {
+        position: absolute;
+        height: 100%;
+        width: 33px;
+        top: 0px;
+        left: 0px;
+        background-size: 13px 13px;
+        background-position: 9px;
+        background-color: var(--lx-bg-color);
+        background-repeat: no-repeat;
+        border: 0px none;
+        text-transform: none;
+    }
+
+    #lx_671632 #lx_close_button span {
+        position: absolute;
+        height: 33px;
+        top: 50%;
+        margin-top: -17px;
+        width: 90px;
+        text-align: center;
+        transform: rotate(-90deg);
+        left: 50%;
+        margin-left: -45px;
+        display: block;
+        line-height: 31px;
+        color: var(--lx-cross-color);
+    }
+
+    #lx_671632 .lx_close_button:before {
+        position: absolute;
+        content: "";
+        top: -40px;
+        right: -40px;
+        left: -40px;
+        bottom: 0px;
+        cursor: default;
+    }
+
+    #lx_671632 div[id^="div-gpt-ad-"] {
+        display: inline-block;
+        position:relative;
+      box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2) !important;
+      padding-left: 33px;
+    }
+
+    #lx_671632 #lx_home_button {
+        display:none;
+    }
+
+    #lx_671632 .lx_home_button {
+        background-color: var(--lx-bg-color);
+        border-radius: 7px 7px 0px 0px;
+        height: 24px;
+        line-height: 24px;
+        padding: 0px 9px;
+        text-align: center;
+        position: absolute;
+        right: 0px;
+        top: -24px;
+        border: none;
+        outline: none;
+        font-family: verdana;
+        font-size: 12px;
+        color: var(--lx-cross-color);
+        cursor: pointer;
+        font-weight: normal;
+        text-decoration: none;
+    }
+
+    #lx_671632 .lx_home_button svg {
+        fill: var(--lx-cross-color)!important;
+        vertical-align: middle;
+    }
+    #lx_671632 .lx_home_button svg path {
+        fill: var(--lx-cross-color)!important;
+    }
+    
+    #lx_671632 .lx_home_button:hover {
+        text-decoration: none
+    }
+
+    #lx_671632 .lx_no_click {
+        position: absolute;
+        width: 113px;
+        left: -43px;
+        bottom: 0px;
+        height: 140%;
+    }
+
+</style>
+<script type="text/javascript" class="">
+    (function(){
+        var id      = "671632";
+        var exText  = "Close"; 
+        
+        var adUnit  = document.querySelector("#lx_" + id);
+        var adName = ["clickio_area_"+ id +"_"];
+        var h       = document.querySelector("#lx_" + id + " #lx_home_button");
+
+        function lxCloseUnit() {
+            while (adUnit.hasChildNodes()) {
+                adUnit.removeChild(adUnit.lastChild);
+            }
+        }
+
+        function addButtons() {
+            var newHomeBtn = h.cloneNode(true);
+            newHomeBtn.removeAttribute("id");
+            newHomeBtn.classList.add("lx_home_button");
+            var lxCloseButton = document.createElement("button")
+            lxCloseButton.id = "lx_close_button";
+            lxCloseButton.innerHTML = "<span>" + exText + "</span>";
+            var lxNoClick = document.createElement("div");
+            lxNoClick.classList.add("lx_no_click");
+            var unit = adUnit.querySelector("div[id^=\"div-gpt-ad-\"]");
+            unit.appendChild(lxNoClick);
+            unit.appendChild(lxCloseButton);
+            unit.appendChild(newHomeBtn);
+            lxCloseButton.onclick = lxCloseUnit;
+        }
+
+        var __lx_checkSlot = function(slotId) {
+            return adName.some(function(adName) {
+                return slotId.indexOf(adName) !== -1;
+            });
+        }
+
+        window.googletag = window.googletag || {};
+        window.googletag.cmd = window.googletag.cmd || [];
+        
+        googletag.cmd.push(function(){
+            googletag.pubads().addEventListener("slotRenderEnded", function(event){
+                var slotId = event.slot.getSlotId().getId();
+                if(__lx_checkSlot(slotId) && event.slot.getResponseInformation())
+                {
+                    addButtons();
+                }
+            });
+        });
+
+        var observer = new MutationObserver(function(mutationsList, observer) {
+            for (let mutation of mutationsList) {
+                if (mutation.type === "childList" && 
+                    /^div-gpt-ad-.*/.test(mutation.target.id) && 
+                    mutation.addedNodes.length && 
+                    mutation.addedNodes[0].tagName === "IFRAME" ) 
+                {
+                    addButtons();
+                    observer.disconnect();
+                }
+            }
+        });
+        
+        observer.observe(adUnit, {
+            childList: true,
+            subtree : true
+        });
+    })();
+</script><div id="div-gpt-ad-22129010996-1"></div></div><script class="__lxGc__" type="text/javascript" data-cnt="1">
+((__lxGc__=window.__lxGc__||{'s':{},'b':0})['s']['_220206']=__lxGc__['s']['_220206']||{'b':{}})['b']['_671633']={'i':__lxGc__.b++};
+</script>
+<img class="adsbygoogle" id="jahYiepai2Rash0K" src="./deque - Double-ended queue - qaz.wiki_files/1x1.png">
+
+<!-- PAGE_ID: 8904 - Double-ended_queue -->
+
+    <div id="mw-panel" class="otherLangs">
+        <div class="portal">
+            <div class="ico-title">
+                <a href="https://pt.qaz.wiki/"><img src="./deque - Double-ended queue - qaz.wiki_files/favicon-96x96.png" class="logo"></a>
+            </div>
+            <hr>
+            <div>
+                <div style="min-height: 200px;">
+                    <div id="leftga1"></div><div id="M445651ScriptRootC395672"><div id="M445651PreloadC395672">loading...</div></div>
+                </div>
+                <div class="body mbbody">
+                    <ul>
+                        <li><a target="_blank" href="https://en.wikipedia.org/wiki/Double-ended_queue">Source</a></li>
+                        <li><a target="_blank" href="https://en.wikipedia.org/w/index.php?title=Double-ended_queue&amp;action=history">Authors</a></li>
+
+                                                <a target="_blank" href="https://pt.wikipedia.org/wiki/Deque_%28estruturas_de_dados%29"><li class="interlanguage-link">Original</li></a>
+                                            </ul>
+                </div>
+                <h3>Languages</h3>
+                <div class="body">
+                <ul>
+                <li class="interlanguage-link"><a lang="cs" hreflang="cs" href="https://cs.qaz.wiki/wiki/Double-ended_queue" title="Oboustranná fronta">Čeština</a></li>
+<li class="interlanguage-link"><a lang="de" hreflang="de" href="https://de.qaz.wiki/wiki/Double-ended_queue" title="Doppelendige Warteschlange">Deutsch</a></li>
+<li class="interlanguage-link"><a lang="es" hreflang="es" href="https://es.qaz.wiki/wiki/Double-ended_queue" title="Cola de dos extremos">Español</a></li>
+<li class="interlanguage-link"><a lang="fr" hreflang="fr" href="https://fr.qaz.wiki/wiki/Double-ended_queue" title="File d&#39;attente à deux extrémités">Français</a></li>
+<li class="interlanguage-link"><a lang="it" hreflang="it" href="https://it.qaz.wiki/wiki/Double-ended_queue" title="Deque">Italiano</a></li>
+<li class="interlanguage-link"><a lang="nl" hreflang="nl" href="https://nl.qaz.wiki/wiki/Double-ended_queue" title="Double-ended wachtrij - Double-ended queue">Nederlands</a></li>
+<li class="interlanguage-link"><a lang="pl" hreflang="pl" href="https://pl.qaz.wiki/wiki/Double-ended_queue" title="kolejka dwukierunkowa - Double-ended queue">Polski</a></li>
+<li class="interlanguage-link"><a lang="ru" hreflang="ru" href="https://ru.qaz.wiki/wiki/Double-ended_queue" title="Двусторонняя очередь">Русский</a></li>
+<li class="interlanguage-link"><a lang="tr" hreflang="tr" href="https://tr.qaz.wiki/wiki/Double-ended_queue" title="Çift uçlu kuyruk - Double-ended queue">Türkçe</a></li>
+<li class="interlanguage-link"><a lang="no" hreflang="no" href="https://no.qaz.wiki/wiki/Double-ended_queue" title="Norsk">Norsk</a></li>
+<li class="interlanguage-link"><a lang="sv" hreflang="sv" href="https://sv.qaz.wiki/wiki/Double-ended_queue" title="Svenska">Svenska</a></li>
+<li class="interlanguage-link"><a lang="da" hreflang="da" href="https://da.qaz.wiki/wiki/Double-ended_queue" title="Dansk">Dansk</a></li>
+<li class="interlanguage-link"><a lang="fi" hreflang="fi" href="https://fi.qaz.wiki/wiki/Double-ended_queue" title="Suomen kieli">Suomen kieli</a></li>
+<li class="interlanguage-link"><a lang="hu" hreflang="hu" href="https://hu.qaz.wiki/wiki/Double-ended_queue" title="Magyar">Magyar</a></li>
+<li class="interlanguage-link"><a lang="ro" hreflang="ro" href="https://ro.qaz.wiki/wiki/Double-ended_queue" title="Română">Română</a></li>
+                </ul></div>
+
+                <div class="body">
+                    <ul>
+                        <li><a href="https://pt.qaz.wiki/wiki/Discrimination" title="Discriminação - Discrimination">Previous article</a></li>
+                        <li><a href="https://pt.qaz.wiki/wiki/Diene" title="Diene - Diene">Next article</a></li>
+                    </ul>
+                </div>
+
+                <h3>In other projects</h3>
+                <div class="body">
+                    <ul>
+                    </ul>
+                </div>
+                <div id="leftga2"></div>
+                <div id="leftga3"></div>
+                <div id="leftga4"></div><script async="" type="text/javascript" src="./deque - Double-ended queue - qaz.wiki_files/360_light.js.download"></script><div id="lx_671662" data-cnt="1" class="__lxG__multi __lxG__multi_lx_671662 __lx_sticky_1 __lx_sticky_pos_fixed __lx_sticky_moving" style="position: fixed; top: 10px;"><style>
+#lx_671662 {
+margin-left: -10px;
+margin-top: 30px;
+}
+</style><div id="div-gpt-ad-22132008248-1"></div></div><script class="__lxGc__" type="text/javascript" data-cnt="1">((__lxGc__=window.__lxGc__||{'s':{},'b':0})['s']['_220206']=__lxGc__['s']['_220206']||{'b':{}})['b']['_671639']={'i':__lxGc__.b++};</script>
+            </div>
+        </div>
+    </div>
+<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="siteNotice" class="mw-body-content"></div>
+<h1 id="firstHeading" class="firstHeading">deque - <span class="notranslate">Double-ended queue</span></h1><script async="" type="text/javascript" src="./deque - Double-ended queue - qaz.wiki_files/360_light.js.download"></script><div id="lx_671628" data-cnt="1" class="__lxG__multi __lxG__multi_lx_671628"><style>
+#lx_671628 {
+margin: 10px;
+display: inline-block;
+}
+</style><div id="div-gpt-ad-22129298022-1"></div></div><script class="__lxGc__" type="text/javascript" data-cnt="1">((__lxGc__=window.__lxGc__||{'s':{},'b':0})['s']['_220206']=__lxGc__['s']['_220206']||{'b':{}})['b']['_671629']={'i':__lxGc__.b++};</script><script async="" type="text/javascript" src="./deque - Double-ended queue - qaz.wiki_files/360_light.js.download"></script><div id="lx_671628" data-cnt="2" class="__lxG__multi __lxG__multi_lx_671628"><style>
+#lx_671628 {
+margin: 10px;
+display: inline-block;
+}
+</style><div id="div-gpt-ad-22129298022-2"></div></div><script class="__lxGc__" type="text/javascript" data-cnt="2">((__lxGc__=window.__lxGc__||{'s':{},'b':0})['s']['_220206']=__lxGc__['s']['_220206']||{'b':{}})['b']['_671629']={'i':__lxGc__.b++};</script><script async="" type="text/javascript" src="./deque - Double-ended queue - qaz.wiki_files/360_light.js.download"></script><div id="lx_671628" data-cnt="3" class="__lxG__multi __lxG__multi_lx_671628"><style>
+#lx_671628 {
+margin: 10px;
+display: inline-block;
+}
+</style><div id="div-gpt-ad-22129298022-3"></div></div><script class="__lxGc__" type="text/javascript" data-cnt="3">((__lxGc__=window.__lxGc__||{'s':{},'b':0})['s']['_220206']=__lxGc__['s']['_220206']||{'b':{}})['b']['_671629']={'i':__lxGc__.b++};</script><script async="" type="text/javascript" src="./deque - Double-ended queue - qaz.wiki_files/360_light.js.download"></script><div id="lx_671628" data-cnt="4" class="__lxG__multi __lxG__multi_lx_671628"><style>
+#lx_671628 {
+margin: 10px;
+display: inline-block;
+}
+</style><div id="div-gpt-ad-22129298022-4"></div></div><script class="__lxGc__" type="text/javascript" data-cnt="4">((__lxGc__=window.__lxGc__||{'s':{},'b':0})['s']['_220206']=__lxGc__['s']['_220206']||{'b':{}})['b']['_671629']={'i':__lxGc__.b++};</script><div style="clear: left"></div>			<div id="bodyContent" class="mw-body-content"><div id="yandex_rtb_R-A-418446-1"></div><br>
+				<div id="siteSub" class="noprint">Da Wikipédia, a enciclopédia livre</div>				<div id="contentSub"></div>
+								
+				
+				<div id="mw-content-text" dir="ltr" class="mw-content-ltr">
+<div class="mw-parser-output">
+<div role="note" class="hatnote navigation-not-searchable">"Deque" redireciona aqui. Não deve ser confundido com dequeueing, uma <a href="https://pt.qaz.wiki/wiki/Queue_(abstract_data_type)" title="Fila (tipo de dados resumo)">fila de</a> operação.</div>
+<div role="note" class="hatnote navigation-not-searchable">Não deve ser confundido com <a href="https://pt.qaz.wiki/wiki/Double-ended_priority_queue" title="fila de prioridade de duas pontas">deque prioridade</a> .</div>
+<p>Em <a href="https://pt.qaz.wiki/wiki/Computer_science" title="Ciência da Computação">informática</a> , uma <b>fila de dupla extremidade</b> (abreviado a <b>fila de dupla extremidade</b> ) é um <a href="https://pt.qaz.wiki/wiki/Abstract_data_type" title="tipo de dados abstrato">tipo de dados de resumo</a> que generaliza uma <a href="https://pt.qaz.wiki/wiki/Queue_(data_structure)" class="mw-redirect" title="Fila (estrutura de dados)">fila</a> , para a qual os elementos podem ser adicionados ou removidos a partir de qualquer parte da frente (cabeça) ou para trás (cauda). Também é frequentemente chamado de <b>lista ligada cabeça-cauda</b> , embora corretamente este se refere a uma específica <a href="https://pt.qaz.wiki/wiki/Data_structure" title="Estrutura de dados">estrutura de dados </a> <i><a href="https://pt.qaz.wiki/wiki/Double-ended_queue#Implementations">implementação</a></i> de um deque (veja abaixo).
+</p>
+<div id="toc" class="toc">
+<input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" dir="ltr">
+<h2>Conteúdo</h2>
+<span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="https://pt.qaz.wiki/wiki/Double-ended_queue#Naming_conventions"><span class="tocnumber">1 </span> <span class="toctext">convenções de nomenclatura</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="https://pt.qaz.wiki/wiki/Double-ended_queue#Distinctions_and_sub-types"><span class="tocnumber">2 </span> <span class="toctext">As distinções e sub-tipos</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="https://pt.qaz.wiki/wiki/Double-ended_queue#Operations"><span class="tocnumber">3 </span> <span class="toctext">Operações</span></a></li>
+<li class="toclevel-1 tocsection-4">
+<a href="https://pt.qaz.wiki/wiki/Double-ended_queue#Implementations"><span class="tocnumber">4 </span> <span class="toctext">Implementações</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="https://pt.qaz.wiki/wiki/Double-ended_queue#Purely_functional_implementation"><span class="tocnumber">4.1 </span> <span class="toctext">implementação puramente funcional</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="https://pt.qaz.wiki/wiki/Double-ended_queue#Language_support"><span class="tocnumber">5 </span> <span class="toctext">O suporte de idiomas</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="https://pt.qaz.wiki/wiki/Double-ended_queue#Complexity"><span class="tocnumber">6 </span> <span class="toctext">Complexidade</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="https://pt.qaz.wiki/wiki/Double-ended_queue#Applications"><span class="tocnumber">7 </span> <span class="toctext">Aplicações</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="https://pt.qaz.wiki/wiki/Double-ended_queue#See_also"><span class="tocnumber">8 </span> <span class="toctext">Veja também</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="https://pt.qaz.wiki/wiki/Double-ended_queue#References"><span class="tocnumber">9 </span> <span class="toctext">Referências</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="https://pt.qaz.wiki/wiki/Double-ended_queue#External_links"><span class="tocnumber">10 </span> <span class="toctext">Ligações externas</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Naming_conventions">convenções de nomenclatura</span></h2>
+<p><i>Deque</i> às vezes é escrito <i>dequeue</i> , mas este uso é geralmente obsoleta na literatura técnica ou escrita técnica porque <i>dequeue</i> é também um verbo que significa "para remover de uma fila". No entanto, várias <a href="https://pt.qaz.wiki/wiki/Library_(computing)" title="Biblioteca (computação)">bibliotecas</a> e alguns escritores, como <a href="https://pt.qaz.wiki/wiki/Alfred_Aho" title="Alfred Aho">Aho</a> , <a href="https://pt.qaz.wiki/wiki/John_Hopcroft" title="John Hopcroft">Hopcroft</a> , e <a href="https://pt.qaz.wiki/wiki/Jeffrey_Ullman" title="Jeffrey Ullman">Ullman</a> em seus livros didáticos <i>Estruturas de Dados e Algoritmos</i> , soletre o <i>dequeue</i> . <a href="https://pt.qaz.wiki/wiki/John_C._Mitchell" title="John C. Mitchell">John Mitchell</a> , autor de <i>Conceitos em Linguagens de Programação,</i> também usa essa terminologia.
+</p>
+<div id="M445651ScriptRootC395921"><div id="M445651PreloadC395921">Loading...</div></div><h2><span class="mw-headline" id="Distinctions_and_sub-types">Distinções e sub-tipos</span></h2>
+<p>Este difere do tipo de dados resumo fila ou <i>primeiro a entrar primeiro a</i> lista ( <a href="https://pt.qaz.wiki/wiki/FIFO_(computing_and_electronics)" title="FIFO (computação e electrónica)">FIFO</a> ), em que os elementos só podem ser adicionados a uma extremidade e removido a partir do outro. Esta classe de dados em geral tem algumas possíveis sub-tipos:
+</p>
+<ul>
+<li>Uma fila de dupla extremidade com restrição de entrada é uma deleção onde pode ser feita a partir de ambas as extremidades, mas a inserção pode ser feita em uma única extremidade.</li>
+<li>Uma fila de dupla extremidade com restrição de saída é um em que a inserção pode ser feita em ambas as extremidades, mas deleção pode ser feita a partir de uma única extremidade.</li>
+</ul>
+<p>Ambos os tipos básicos e mais comuns de lista em computação, <a href="https://pt.qaz.wiki/wiki/Queue_(data_structure)" class="mw-redirect" title="Fila (estrutura de dados)">filas</a> e <a href="https://pt.qaz.wiki/wiki/Stack_(data_structure)" class="mw-redirect" title="Pilha (estrutura de dados)">pilhas</a> pode ser considerado especializações de deques, e pode ser implementado usando deques.
+</p>
+<h2><span class="mw-headline" id="Operations">Operações</span></h2>
+<p>As operações básicas em um deque são <i>enqueue</i> e <i>dequeue</i> em cada extremidade. Também geralmente implementadas são <i><a href="https://pt.qaz.wiki/wiki/Peek_(data_type_operation)" title="Peek (operação de tipo de dados)">espreitar</a></i> operações, que retornam o valor nesse fim sem dequeuing-lo.
+</p>
+<p>Nomes variam entre as línguas; grandes implementações incluem:
+</p>
+<table class="wikitable"><tbody>
+<tr>
+<th>Operação</th>
+<th>nomes comuns)</th>
+<th><a href="https://pt.qaz.wiki/wiki/Ada_(programming_language)" title="Ada (linguagem de programação)">Ada</a></th>
+<th><a href="https://pt.qaz.wiki/wiki/C%2B%2B" title="C ++">C ++</a></th>
+<th><a href="https://pt.qaz.wiki/wiki/Java_(programming_language)" title="Java (linguagem de programação)">Java</a></th>
+<th><a href="https://pt.qaz.wiki/wiki/Perl" title="Perl">Perl</a></th>
+<th><a href="https://pt.qaz.wiki/wiki/PHP" title="PHP">PHP</a></th>
+<th><a href="https://pt.qaz.wiki/wiki/Python_(programming_language)" title="Python (linguagem de programação)">píton</a></th>
+<th><a href="https://pt.qaz.wiki/wiki/Ruby_(programming_language)" title="Ruby (linguagem de programação)">Rubi</a></th>
+<th>
+<a href="https://pt.qaz.wiki/wiki/JavaScript" title="JavaScript">JavaScript</a>
+</th>
+</tr>
+<tr>
+<td>inserir elemento na parte traseira</td>
+<td>injectar, snoC, impulso</td>
+<td><code>Append</code></td>
+<td><code>push_back</code></td>
+<td><code>offerLast</code></td>
+<td><code>push</code></td>
+<td><code>array_push</code></td>
+<td><code>append</code></td>
+<td><code>push</code></td>
+<td>
+<code>push</code>
+</td>
+</tr>
+<tr>
+<td>inserir elemento em frente</td>
+<td>de pressão, cons</td>
+<td><code>Prepend</code></td>
+<td><code>push_front</code></td>
+<td><code>offerFirst</code></td>
+<td><code>unshift</code></td>
+<td><code>array_unshift</code></td>
+<td><code>appendleft</code></td>
+<td><code>unshift</code></td>
+<td>
+<code>unshift</code>
+</td>
+</tr>
+<tr>
+<td>remover o último elemento</td>
+<td>ejetar</td>
+<td><code>Delete_Last</code></td>
+<td><code>pop_back</code></td>
+<td><code>pollLast</code></td>
+<td><code>pop</code></td>
+<td><code>array_pop</code></td>
+<td><code>pop</code></td>
+<td><code>pop</code></td>
+<td>
+<code>pop</code>
+</td>
+</tr>
+<tr>
+<td>remover primeiro elemento</td>
+<td>estouro</td>
+<td><code>Delete_First</code></td>
+<td><code>pop_front</code></td>
+<td><code>pollFirst</code></td>
+<td><code>shift</code></td>
+<td><code>array_shift</code></td>
+<td><code>popleft</code></td>
+<td><code>shift</code></td>
+<td>
+<code>shift</code>
+</td>
+</tr>
+<tr>
+<td>examinar último elemento</td>
+<td>olhadinha
+</td>
+<td><code>Last_Element</code></td>
+<td><code>back</code></td>
+<td><code>peekLast</code></td>
+<td><code>$array[-1]</code></td>
+<td><code>end</code></td>
+<td><code>&lt;obj&gt;[-1]</code></td>
+<td><code>last</code></td>
+<td>
+<code>&lt;obj&gt;[&lt;obj&gt;.length - 1]</code>
+</td>
+</tr>
+<tr>
+<td>examinar primeiro elemento</td>
+<td></td>
+<td><code>First_Element</code></td>
+<td><code>front</code></td>
+<td><code>peekFirst</code></td>
+<td><code>$array[0]</code></td>
+<td><code>reset</code></td>
+<td><code>&lt;obj&gt;[0]</code></td>
+<td><code>first</code></td>
+<td>
+<code>&lt;obj&gt;[0]</code>
+</td>
+</tr>
+</tbody></table>
+<div id="M445651ScriptRootC1003432"><div id="M445651PreloadC1003432">Loading...</div></div><h2><span class="mw-headline" id="Implementations">implementações</span></h2>
+<p>Há pelo menos duas maneiras comuns para implementar eficientemente um deque: com modificado <a href="https://pt.qaz.wiki/wiki/Dynamic_array" title="matriz dinâmica">matriz dinâmica</a> ou com uma <a href="https://pt.qaz.wiki/wiki/Doubly_linked_list" title="lista duplamente ligada">lista duplamente ligada</a> .
+</p>
+<p>A abordagem matriz dinâmica usa uma variante de uma <a href="https://pt.qaz.wiki/wiki/Dynamic_array" title="matriz dinâmica">matriz dinâmica</a> que pode crescer a partir de ambas as extremidades, às vezes chamados de <b>deques de matriz</b> . Estes deques matriz possuem todas as propriedades de uma gama dinâmica, tal como a constante de tempo <a href="https://pt.qaz.wiki/wiki/Random_access" title="Acesso aleatório">de acesso aleatório</a> , boa <a href="https://pt.qaz.wiki/wiki/Locality_of_reference" title="Localidade de referência">localização de referência</a> , e inserção ineficiente / remoção do meio, com a adição de amortizado-constante de tempo de inserção / remoção em ambas as extremidades, em vez de apenas um fim. Três implementações comuns incluem:
+</p>
+<ul>
+<li>Armazenando conteúdo deque num <a href="https://pt.qaz.wiki/wiki/Circular_buffer" title="O tampão circular">tampão circular</a> , e apenas o redimensionamento quando o tampão torna-se completo. Isto diminui a frequência de resizings.</li>
+<li>Atribuição de conteúdo deque a partir do centro da matriz subjacente, e o redimensionamento da matriz subjacente, quando uma ou outra extremidade é atingida. Esta abordagem pode requerer resizings mais frequentes e mais desperdiça espaço, especialmente quando os elementos são apenas inserido numa extremidade.</li>
+<li>Armazenar o conteúdo em várias matrizes menores, repartição matrizes adicionais no início ou no final, conforme necessário. Indexação é implementado, mantendo uma matriz dinâmica que contém ponteiros para cada uma das matrizes menores.</li>
+</ul>
+<h3><span class="mw-headline" id="Purely_functional_implementation">implementação puramente funcional</span></h3>
+<p>Filas duplas-ended também pode ser implementado como uma <a href="https://pt.qaz.wiki/wiki/Purely_functional_data_structure" title="estrutura de dados puramente funcional">estrutura de dados puramente funcional</a> . Duas versões da aplicação existir. O primeiro, chamado ' <i>deque em tempo real</i> , é apresentada abaixo. Ele permite que a fila para ser <a href="https://pt.qaz.wiki/wiki/Persistent_data_structure" title="estrutura de dados persistente">persistente</a> com operações em tempo de pior caso, mas requer <a href="https://pt.qaz.wiki/wiki/Lazy_evaluation" title="Lazy evaluation"><font style="vertical-align: inherit;">preguiçosos</font></a><font style="vertical-align: inherit;"> listas com </font><a href="https://pt.qaz.wiki/wiki/Memoization" title="Memoization"><font style="vertical-align: inherit;">memoization</font></a><font style="vertical-align: inherit;"> . O segundo, sem listas preguiçosos nem memoization é apresentada no final das seções. Sua </font><a href="https://pt.qaz.wiki/wiki/Amortized_analysis" title="Amortized analysis"><font style="vertical-align: inherit;">amortizado</font></a><font style="vertical-align: inherit;"> tempo é se a persistência não é utilizado; mas a complexidade pior-tempo de uma operação é em que é o número de elementos na fila de dupla extremidade.
+<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle O(1)}"><semantics><mrow class="MJX-TeXAtom-ORD"><mstyle displaystyle="true" scriptlevel="0"><mi>O</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mstyle></mrow><annotation encoding="application/x-tex">{\ Displaystyle O (1)}</annotation></semantics></math></span><img src="./deque - Double-ended queue - qaz.wiki_files/e66384bc40452c5452f33563fe0e27e803b0cc21" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.745ex; height:2.843ex;" alt="O (1)"></span><font style="vertical-align: inherit;"></font><a href="https://pt.qaz.wiki/wiki/Lazy_evaluation" title="avaliação preguiçosa"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font><a href="https://pt.qaz.wiki/wiki/Memoization" title="memoização"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font><a href="https://pt.qaz.wiki/wiki/Amortized_analysis" title="análise amortizado"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle O(1)}"><semantics><mrow class="MJX-TeXAtom-ORD"><mstyle displaystyle="true" scriptlevel="0"><mi>O</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mstyle></mrow><annotation encoding="application/x-tex">{\ Displaystyle O (1)}</annotation></semantics></math></span><img src="./deque - Double-ended queue - qaz.wiki_files/e66384bc40452c5452f33563fe0e27e803b0cc21" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.745ex; height:2.843ex;" alt="O (1)"></span><font style="vertical-align: inherit;"></font><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle O(n)}"><semantics><mrow class="MJX-TeXAtom-ORD"><mstyle displaystyle="true" scriptlevel="0"><mi>O</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mstyle></mrow><annotation encoding="application/x-tex">{\ Displaystyle O (n)}</annotation></semantics></math></span><img src="./deque - Double-ended queue - qaz.wiki_files/34109fe397fdcff370079185bfdb65826cb5565a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.977ex; height:2.843ex;" alt="Em)"></span><font style="vertical-align: inherit;"></font><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n}"><semantics><mrow class="MJX-TeXAtom-ORD"><mstyle displaystyle="true" scriptlevel="0"><mi>n</mi></mstyle></mrow><annotation encoding="application/x-tex">{\ N} displaystyle</annotation></semantics></math></span><img src="./deque - Double-ended queue - qaz.wiki_files/a601995d55609f2d9f5e233e36fbe9ea26011b3b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.395ex; height:1.676ex;" alt="n"></span><font style="vertical-align: inherit;"></font></font></p><font style="vertical-align: inherit;">
+<p>Recordemos que, para uma lista <code>l</code>, <code>|l|</code>denota o seu comprimento, que <code>NIL</code>representa uma lista vazia e <code>CONS(h,t)</code>representa a lista cuja cabeça é <code>h</code>e cuja cauda é <code>t</code>. As funções <code>drop(i,l)</code>e <code>take(i,l)</code>retornar a lista <code>l</code>sem os seus primeiros <code>i</code>elementos, e a <code>i</code>primeiros elementos 's, respectivamente. Ou, se <code>|l| &lt; i</code>, eles retornam a lista vazia e <code>l</code>, respectivamente.
+</p>
+<p>Uma fila de dupla extremidade está representado como um sixtuple <code>lenf,f,sf,lenr,r,sr</code>onde <code>f</code>é uma <a href="https://pt.qaz.wiki/wiki/Linked_list" title="lista encadeada">lista encadeada</a> , que contém a frente da fila de comprimento <code>lenf</code>. Da mesma forma, <code>r</code>é uma lista encadeada, que representa o inverso da parte de trás da fila, de comprimento <code>lenr</code>. Além disso, é assegurado que <code>|f| &lt;= 2|r|+1</code>e <code>|r| &lt;= 2|f|+1</code>- intuitivamente, isso significa que nem a frente nem o traseiro contém mais de um terço da lista de mais um elemento. Finalmente, <code>sf</code>e <code>sr</code>são caudas de <code>f</code>e de <code>r</code>, permitem programar o momento em que algumas operações preguiçosos são forçados. Note-se que, quando uma fila de dupla extremidade contém <code>n</code>elementos na lista frente e <code>n</code>elementos na lista traseira, então o invariante desigualdade permanece satisfeito após <code>i</code>inserções e <code>d</code>deleções quando <code>(i+d)/2 &lt;= n</code>. Isto é, na maioria das <code>n/2</code>operações pode acontecer entre cada reequilíbrio.
+</p>
+<p>Intuitivamente, a inserção de um elemento <code>x</code>em frente da fila de dupla extremidade <code>lenf, f, sf, lenr, sr</code>leva quase para a fila de dupla extremidade <code>lenf+1, CONS(x,f), drop(2,sf), lenr, r, drop(2,sr)</code>, a cabeça e a cauda da fila de dupla extremidade <code>lenf, CONS(x,f), sf, lenr, r, sr</code>são <code>x</code>e quase <code>lenf-1, f, drop(2,sf), lenr, r, drop(2,sr)</code>respectivamente, e a cabeça e a cauda do <code>lenf, NIL, NIL, lenr, CONS(x,NIL), drop(2,sr)</code>são <code>x</code>e <code>0, NIL, NIL, 0, NIL, NIL</code>respectivamente. A função para inserir um elemento na parte traseira, ou para pôr o último elemento da fila de dupla extremidade, são semelhantes à função acima que lidar com a frente da fila de dupla extremidade. Diz-se <i>quase</i> porque, após a inserção e depois de uma aplicação de <i>cauda</i> , o invariante <code>|r| &lt;= 2|f|+1</code>pode não ser mais satisfeito. Neste caso, é necessária para reequilibrar o deque.
+</p>
+<p>A fim de evitar uma operação com um <code>O(n)</code>custo, o algoritmo usa a preguiça com memoization, e forçar o reequilíbrio a ser feito, em parte, durante as seguintes <code>(|l| + |r|)/2</code>operações, ou seja, antes da seguinte reequilíbrio. A fim de criar a programação, algumas funções preguiçosos auxiliares são necessários. A função <code>rotateRev(f,r,a)</code>devolve a lista <code>f</code>, seguido da lista <code>r</code>, e seguido pela lista <code>a</code>. É necessário nesta função que <code>|r|-2|f|</code>é 2 ou 3. Esta função é definida por indução como <code>rotateRev(NIL,r,a)=reverse(r++a)</code>onde ++ é a operação de encadeamento, e por <code>rotateRev(CONS(x,f),r,a)=CONS(x,rotateRev(f,drop(2,r),reverse (take(2,r))++a))</code>. Deve-se notar que, <code>rotateRev(f,r,NIL)</code>retorna a lista <code>f</code>seguido pela lista <code>r</code>invertida. A função <code>rotateDrop(f,j,r)</code>que retorna <code>f</code>seguido por ( <code>r</code>sem <code>j</code>'s primeiro elemento) reverteu também é necessário, para <code>j &lt; |f|</code>. Ela é definida por <code>rotateDrop(f,0,r) == rotateRev(f,r,NIL)</code>, <code>rotateDrop(f,1,r) == rotateRev(f,drop(1,r),NIL)</code>e <code>rotateDrop(CONS(x,f),j,r) == CONS(x,rotateDrop(f,j-2),drop(2,r))</code>.
+</p>
+<p>A função de balanceamento pode agora ser definido com
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre class="notranslate"><span></span><span class="kr">fun</span> <span class="nf">balance</span><span class="p">(</span><span class="n">q</span> <span class="kr">as</span> <span class="p">(</span><span class="n">lenf</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span><span class="n">sf</span><span class="p">,</span> <span class="n">lenr</span><span class="p">,</span><span class="n">r</span><span class="p">,</span><span class="n">sr</span><span class="p">))=</span>
+  <span class="kr">if</span> <span class="n">lenf</span> <span class="n">&gt;</span> <span class="mi">2</span><span class="n">*lenr+</span><span class="mi">1</span> <span class="kr">then</span>
+    <span class="kr">let</span> <span class="kr">val</span> <span class="nv">i</span><span class="p">=</span> <span class="p">(</span><span class="n">left+lenr</span><span class="p">)</span><span class="n">div</span> <span class="mi">2</span>
+        <span class="kr">val</span> <span class="nv">j</span><span class="p">=</span><span class="n">lenf</span> <span class="n">+</span> <span class="n">lenr</span> <span class="n">-i</span>
+        <span class="kr">val</span> <span class="nv">f'</span><span class="p">=</span><span class="n">take</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">f</span><span class="p">)</span>
+        <span class="kr">val</span> <span class="nv">r'</span><span class="p">=</span><span class="n">rotateDrop</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="n">f</span><span class="p">)</span>
+    <span class="kr">in</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">f'</span><span class="p">,</span><span class="n">f'</span><span class="p">,</span><span class="n">j</span><span class="p">,</span><span class="n">r'</span><span class="p">,</span><span class="n">r'</span><span class="p">)</span>
+  <span class="kr">else</span> <span class="kr">if</span> <span class="n">lenf</span> <span class="n">&gt;</span> <span class="mi">2</span><span class="n">*lenr+</span><span class="mi">1</span> <span class="kr">then</span>
+    <span class="kr">let</span> <span class="kr">val</span> <span class="nv">j</span><span class="p">=</span> <span class="p">(</span><span class="n">left+lenr</span><span class="p">)</span><span class="n">div</span> <span class="mi">2</span>
+        <span class="kr">val</span> <span class="nv">i</span><span class="p">=</span><span class="n">lenf</span> <span class="n">+</span> <span class="n">lenr</span> <span class="n">-j</span>
+        <span class="kr">val</span> <span class="nv">r'</span><span class="p">=</span><span class="n">take</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">r</span><span class="p">)</span>
+        <span class="kr">val</span> <span class="nv">f'</span><span class="p">=</span><span class="n">rotateDrop</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="n">r</span><span class="p">)</span>
+    <span class="kr">in</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">f'</span><span class="p">,</span><span class="n">f'</span><span class="p">,</span><span class="n">j</span><span class="p">,</span><span class="n">r'</span><span class="p">,</span><span class="n">r'</span><span class="p">)</span>
+  <span class="kr">else</span> <span class="n">q</span>
+</pre></div>
+<p>Note-se que, sem a parte preguiçosa da execução, isso seria uma implementação não-persistente de fila em <code>O(1)</code> <a href="https://pt.qaz.wiki/wiki/Amortized_analysis" title="análise amortizado">tempo amortizado</a> . Neste caso, as listas <code>sf</code>e <code>sr</code>pode ser removido a partir da representação da fila de dupla extremidade.
+</p>
+<h2><span class="mw-headline" id="Language_support">Suporte de linguas</span></h2>
+<p><a href="https://pt.qaz.wiki/wiki/Ada_(programming_language)" title="Ada (linguagem de programação)">Ada</a> recipientes 's fornece o genérico de pacotes <tt>Ada.Containers.Vectors</tt> e <tt>Ada.Containers.Doubly_Linked_Lists</tt> , para a matriz dinâmica e ligados lista implementações, respectivamente.
+</p>
+<p>'S C ++ <a href="https://pt.qaz.wiki/wiki/Standard_Template_Library" title="Standard Template Library">Standard Template Library</a> fornece a classe modelos de <tt>std :: deque</tt> e <tt>std :: lista</tt> , para a matriz múltipla e ligadas lista implementações, respectivamente.
+</p>
+<p>Como de Java 6, de Java Colecções Quadro fornece uma nova <code><a rel="nofollow" class="external text" href="https://docs.oracle.com/javase/10/docs/api/java/util/Deque.html">Deque</a></code>interface que fornece a funcionalidade de inserção e remoção em ambas as extremidades. Ele é implementado por classes, tais como <code><a rel="nofollow" class="external text" href="https://docs.oracle.com/javase/10/docs/api/java/util/ArrayDeque.html">ArrayDeque</a></code>(também novo em Java 6) e <code><a rel="nofollow" class="external text" href="https://docs.oracle.com/javase/10/docs/api/java/util/LinkedList.html">LinkedList</a></code>, proporcionando a matriz dinâmica e ligadas lista implementações, respectivamente. No entanto, o <tt>ArrayDeque</tt> , ao contrário do seu nome, não suporta acesso aleatório.
+</p>
+<p><a href="https://pt.qaz.wiki/wiki/Perl" title="Perl">Perl</a> matrizes 's têm suporte nativo tanto para a remoção de ( <a rel="nofollow" class="external text" href="http://perldoc.perl.org/functions/shift.html">deslocamento</a> e <a rel="nofollow" class="external text" href="http://perldoc.perl.org/functions/pop.html">pop</a> ) e adicionar ( <a rel="nofollow" class="external text" href="http://perldoc.perl.org/functions/unshift.html">unshift</a> e <a rel="nofollow" class="external text" href="http://perldoc.perl.org/functions/push.html">empurra</a> elementos) em ambas as extremidades.
+</p>
+<p>Python 2.4 introduziu o <code>collections</code>módulo com suporte para <a rel="nofollow" class="external text" href="https://docs.python.org/2.7/library/collections.html#deque-objects">objetos deque</a> . Ele é implementado usando uma lista duplamente ligada de subarrays de comprimento fixo.
+</p>
+<p>A partir do PHP 5.3, extensão SPL do PHP contém a classe 'SplDoublyLinkedList', que pode ser usado para implementar datastructures deque. Anteriormente para fazer uma estrutura Deque as funções de matriz array_shift / unshift / pop / impulso tinha que ser utilizado em vez disso.
+</p>
+<p><a href="https://pt.qaz.wiki/wiki/Glasgow_Haskell_Compiler" title="Glasgow Haskell Compiler">GHC</a> 's <a rel="nofollow" class="external text" href="https://web.archive.org/web/20091015073943/http://www.haskell.org/ghc/docs/latest/html/libraries/containers/Data-Sequence.html">Data.Sequence</a> módulo implementa uma estrutura de fila de dupla extremidade eficiente, funcional em <a href="https://pt.qaz.wiki/wiki/Haskell_(programming_language)" title="Haskell (linguagem de programação)">Haskell</a> . A implementação usa <a href="https://pt.qaz.wiki/wiki/2%E2%80%933_tree" title="árvore 2-3">2-3 árvores dedo</a> anotados com tamanhos. Existem outras possibilidades (rápido) para implementar puramente funcionais (portanto, também <a href="https://pt.qaz.wiki/wiki/Persistent_data_structure" title="estrutura de dados persistente">persistentes</a> filas duplas) (mais usando fortemente <a href="https://pt.qaz.wiki/wiki/Lazy_evaluation" title="avaliação preguiçosa">avaliação preguiçosa</a> ). Kaplan e Tarjan foram os primeiros a implementar óptimas deques catenable confluently persistentes. A sua aplicação era estritamente puramente funcional no sentido de que ele não usou avaliação preguiçosa. Okasaki simplificada a estrutura de dados utilizando a avaliação lenta com uma estrutura de dados de bootstrap e degradar os limites de desempenho do pior caso para amortizado. Kaplan, Okasaki, e Tarjan produziu um simples, não-bootstrap, versão que pode ser implementado utilizando avaliação preguiçosa ou de forma mais eficiente através de mutação de uma forma mais ampla, mas ainda restrito amortizados. Mihaesau e Tarjan criou um simples (mas ainda altamente complexa) estritamente puramente funcional implementação dos deques catenable, e também uma implementação muito mais simples de deques não catenable estritamente puramente funcionais, sendo que ambos têm limites ideais de pior caso.
+</p>
+<h2><span class="mw-headline" id="Complexity">Complexidade</span></h2>
+<ul>
+<li>Numa implementação lista duplamente ligada e assumindo que não há sobrecarga de alocação / desatribuição, a <a href="https://pt.qaz.wiki/wiki/Computational_complexity_theory" title="teoria da complexidade computacional">complexidade de tempo</a> de todas as operações deque é <a href="https://pt.qaz.wiki/wiki/Big_O_notation" title="notação O grande">O (1)</a> . Além disso, a complexidade de tempo de inserção ou eliminação no meio, dada uma iteração, é O (1); no entanto, a complexidade de tempo de acesso aleatório por índice é O (n).</li>
+<li>Em uma matriz de crescimento, o <a href="https://pt.qaz.wiki/wiki/Amortized_analysis" title="análise amortizado">amortizado</a> complexidade de tempo de todas as operações deque é <a href="https://pt.qaz.wiki/wiki/Big_O_notation" title="notação O grande">O (1)</a> . Além disso, a complexidade de tempo de acesso aleatório por índice é O (1); mas a complexidade do tempo de inserção ou eliminação no meio é <a href="https://pt.qaz.wiki/wiki/Big_O_notation" title="notação O grande">O (n)</a> .</li>
+</ul>
+<h2><span class="mw-headline" id="Applications">aplicações</span></h2>
+<p>Um exemplo onde um deque pode ser usado é o <i>A-Steal </i> <a href="https://pt.qaz.wiki/wiki/Scheduling_algorithm" class="mw-redirect" title="algoritmo de escalonamento">algoritmo de agendamento de tarefas</a> . Este algoritmo implementa agendamento de tarefas para vários processadores. Uma fila de dupla extremidade separada com fios a serem executadas é mantido para cada processador. Para executar o próximo tópico, o processador recebe o primeiro elemento do deque (usando o "remover primeiro elemento" operação deque). Se o segmento atual <a href="https://pt.qaz.wiki/wiki/Fork_(operating_system)" class="mw-redirect" title="Fork (sistema operacional)">garfos</a> , ele é colocado de volta para a frente do deque ( "elemento em frente inserir") e um novo segmento é executado. Quando um dos processadores termina a execução de seus próprios tópicos (ou seja, sua deque está vazia), ele pode "roubar" um fio de outro processador: torna-se o último elemento do deque de um outro processador ( "remover o último elemento") e executa isto. O algoritmo de escalonamento roubar-job é usado por Threading Building Blocks biblioteca (TBB) da Intel para a programação paralela.
+</p>
+<script async="" type="text/javascript" src="./deque - Double-ended queue - qaz.wiki_files/360_light.js.download"></script><div id="lx_671628" data-cnt="5" class="__lxG__multi __lxG__multi_lx_671628"><style>
+#lx_671628 {
+margin: 10px;
+display: inline-block;
+}
+</style><div id="div-gpt-ad-22129298022-5"></div></div><script class="__lxGc__" type="text/javascript" data-cnt="5">((__lxGc__=window.__lxGc__||{'s':{},'b':0})['s']['_220206']=__lxGc__['s']['_220206']||{'b':{}})['b']['_671629']={'i':__lxGc__.b++};</script><script async="" type="text/javascript" src="./deque - Double-ended queue - qaz.wiki_files/360_light.js.download"></script><div id="lx_671628" data-cnt="6" class="__lxG__multi __lxG__multi_lx_671628"><style>
+#lx_671628 {
+margin: 10px;
+display: inline-block;
+}
+</style><div id="div-gpt-ad-22129298022-6"></div></div><script class="__lxGc__" type="text/javascript" data-cnt="6">((__lxGc__=window.__lxGc__||{'s':{},'b':0})['s']['_220206']=__lxGc__['s']['_220206']||{'b':{}})['b']['_671629']={'i':__lxGc__.b++};</script><script async="" type="text/javascript" src="./deque - Double-ended queue - qaz.wiki_files/360_light.js.download"></script><div id="lx_671628" data-cnt="7" class="__lxG__multi __lxG__multi_lx_671628"><style>
+#lx_671628 {
+margin: 10px;
+display: inline-block;
+}
+</style><div id="div-gpt-ad-22129298022-7"></div></div><script class="__lxGc__" type="text/javascript" data-cnt="7">((__lxGc__=window.__lxGc__||{'s':{},'b':0})['s']['_220206']=__lxGc__['s']['_220206']||{'b':{}})['b']['_671629']={'i':__lxGc__.b++};</script><script async="" type="text/javascript" src="./deque - Double-ended queue - qaz.wiki_files/360_light.js.download"></script><div id="lx_671628" data-cnt="8" class="__lxG__multi __lxG__multi_lx_671628"><style>
+#lx_671628 {
+margin: 10px;
+display: inline-block;
+}
+</style><div id="div-gpt-ad-22129298022-8"></div></div><script class="__lxGc__" type="text/javascript" data-cnt="8">((__lxGc__=window.__lxGc__||{'s':{},'b':0})['s']['_220206']=__lxGc__['s']['_220206']||{'b':{}})['b']['_671629']={'i':__lxGc__.b++};</script><div style="clear: left"></div><h2><span class="mw-headline" id="See_also">Veja também</span></h2>
+<ul>
+<li><a href="https://pt.qaz.wiki/wiki/Pipeline_(Unix)#pipe_character" title="Oleoduto (Unix)">Tubo</a></li>
+<li><a href="https://pt.qaz.wiki/wiki/Queue_(data_structure)" class="mw-redirect" title="Fila (estrutura de dados)">Fila</a></li>
+<li><a href="https://pt.qaz.wiki/wiki/Priority_queue" title="Fila de prioridade">Fila de prioridade</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">Referências</span></h2>
+
+<h2><span class="mw-headline" id="External_links">links externos</span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://ccodearchive.net/info/deque.html">implementação de tipo seguro open source deque em Comprehensive C Archive Network</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.sgi.com/tech/stl/Deque.html">SGI Documentação STL: deque &lt;T, Alloc&gt;</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.codeproject.com/KB/stl/vector_vs_deque.aspx">Projeto de código: um estudo em profundidade do STL Deque Container</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.martinbroadhurst.com/articles/deque.html">implementação fila de dupla extremidade em C</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.ludvikjerabek.com/downloads.html">implementação VBScript de pilha, fila, deque, e árvore Vermelho-Preto</a></li>
+<li><a rel="nofollow" class="external text" href="https://code.google.com/p/deques/source/browse/">Várias implementações de deques não catenable em Haskell</a></li>
+</ul>
+
+
+
+
+
+</font></div><font style="vertical-align: inherit;">
+<noscript>&lt;img src="https://en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;"&gt;</noscript>
+</font></div><font style="vertical-align: inherit;">					
+								<div class="visualClear"></div>
+							</font></div><font style="vertical-align: inherit;">
+		</font></div><font style="vertical-align: inherit;">
+<!-- /Desktop version -->
+    <div id="footer" role="contentinfo" style="margin-left: 10em;">
+    <ul id="footer-info">
+        <li id="footer-info-copyright" class="footerli">This page is based on the copyrighted Wikipedia article <a target="_blank" href="https://en.wikipedia.org/wiki/Double-ended_queue">"Double-ended_queue"</a> (<a target="_blank" href="https://en.wikipedia.org/w/index.php?title=Double-ended_queue&amp;action=history">Authors</a>); it is used under the <a rel="license" target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>. You may redistribute it, verbatim or modified, providing that you comply with the terms of the CC-BY-SA.
+        </li><br>
+        <li id="footer-info-coockie" class="footerli">
+            <a rel="license" target="_blank" href="https://pt.qaz.wiki/cookie-policy">Cookie-policy</a>
+        </li>
+        <li id="footer-info-contacts" class="footerli">
+        &nbsp; &nbsp; &nbsp; To contact us: mail to <a href="mailto:admin@qwerty.wiki">admin@qwerty.wiki</a>
+        </li>
+        <br>
+        <hr>
+        <li class="footerli" style="background-color: #fcc; font-size: 100%; font-weight: bold;">
+            <a href="https://pt.qaz.wiki/wiki/Double-ended_queue#" onclick="if(window.__lxG__consent__!==undefined&amp;&amp;window.__lxG__consent__.getState()!==null){window.__lxG__consent__.showConsent()} else {alert(&#39;This function only for users from European Economic Area (EEA)&#39;)}; return false">&nbsp;Change&nbsp;privacy&nbsp;settings&nbsp;</a>
+        </li>
+    </ul>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</div><div id="mw-body"><script async="" type="text/javascript" src="./deque - Double-ended queue - qaz.wiki_files/360_light.js.download"></script><div id="lx_671636" data-cnt="1" class="__lxG__multi __lxG__multi_lx_671636"><div id="div-gpt-ad-22129012883-1"></div></div><script class="__lxGc__" type="text/javascript" data-cnt="1">((__lxGc__=window.__lxGc__||{'s':{},'b':0})['s']['_220206']=__lxGc__['s']['_220206']||{'b':{}})['b']['_671637']={'i':__lxGc__.b++};</script></div>
+
+
+<!-- ADV -->
+<script type="application/javascript">$(document).ready(start);</script>
+<!-- /ADV -->
+
+
+
+<!-- V2.1 time_gen: 0.027169 sec. --></font><iframe name="ym-native-frame" title="ym-native-frame" frameborder="0" aria-hidden="true" style="opacity: 0 !important; width: 0px !important; height: 0px !important; position: absolute !important; left: 100% !important; bottom: 100% !important; border: 0px !important;" src="./deque - Double-ended queue - qaz.wiki_files/saved_resource.html"></iframe></body></html>

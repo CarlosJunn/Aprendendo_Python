@@ -1,0 +1,20 @@
+/* eu: 0 */
+/* src: 2020-09-30 02:22:46 */
+/* gen: 2020-10-07 13:19:31 */
+
+(function(){
+    (window.__lxG__consent__=window.__lxG__consent__||{}).getState    = function(){return null;};
+    (window.__lxG__consent__=window.__lxG__consent__||{}).showConsent = function(){return null;};
+
+    if (typeof(window.__tcfapi) != 'undefined') {
+        window.__tcfapi('setGdprApplies', 2, null, !1);
+    }
+
+    document.documentElement.dispatchEvent(new CustomEvent('clickioConsentEvent', {'detail': {'state': null}}));
+
+    if (typeof(window.__lxG__consent__) != 'undefined'
+        && typeof(window.__lxG__consent__.consentCallback) == 'function'
+    ) {
+        window.__lxG__consent__.consentCallback(null);
+    }
+})();
