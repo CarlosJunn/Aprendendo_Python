@@ -1,0 +1,814 @@
+//--- 20200630
+
+//--- EvaDav
+//---
+var evadav = {
+    'cs.qwe.wiki' : 'https://ntvsw.com/code/native.js?h=waWQiOjEwMDU0MjcsInNpZCI6MTAxMjkzMSwid2lkIjo1ODQ4Nywic3JjIjoyfQ==eyJ',
+    'de.qwe.wiki' : 'https://ntvsw.com/code/native.js?h=waWQiOjEwMDU0MjcsInNpZCI6MTAxMjkzMSwid2lkIjo1ODQ4Nywic3JjIjoyfQ==eyJ',
+    'es.qwe.wiki' : 'https://ntvsw.com/code/native.js?h=waWQiOjEwMDU0MjcsInNpZCI6MTAxMjkzMSwid2lkIjo1ODQ4Nywic3JjIjoyfQ==eyJ',
+    'fr.qwe.wiki' : 'https://ntvsw.com/code/native.js?h=waWQiOjEwMDU0MjcsInNpZCI6MTAxMjkzMSwid2lkIjo1ODQ4Nywic3JjIjoyfQ==eyJ',
+    'it.qwe.wiki' : 'https://ntvsw.com/code/native.js?h=waWQiOjEwMDU0MjcsInNpZCI6MTAxMjkzMSwid2lkIjo1ODQ4Nywic3JjIjoyfQ==eyJ',
+    'nl.qwe.wiki' : 'https://ntvsw.com/code/native.js?h=waWQiOjEwMDU0MjcsInNpZCI6MTAxMjkzMSwid2lkIjo1ODQ4Nywic3JjIjoyfQ==eyJ',
+    'pl.qwe.wiki' : 'https://ntvsw.com/code/native.js?h=waWQiOjEwMDU0MjcsInNpZCI6MTAxMjkzMSwid2lkIjo1ODQ4Nywic3JjIjoyfQ==eyJ',
+    'pt.qwe.wiki' : 'https://ntvsw.com/code/native.js?h=waWQiOjEwMDU0MjcsInNpZCI6MTAxMjkzMSwid2lkIjo1ODQ4Nywic3JjIjoyfQ==eyJ',
+    'ru.qwe.wiki' : 'https://ntvsw.com/code/native.js?h=waWQiOjEwMDU0MjcsInNpZCI6MTAxMjkzMSwid2lkIjo1ODQ4Nywic3JjIjoyfQ==eyJ',
+    'tr.qwe.wiki' : 'https://ntvsw.com/code/native.js?h=waWQiOjEwMDU0MjcsInNpZCI6MTAxMjkzMSwid2lkIjo1ODQ4Nywic3JjIjoyfQ==eyJ',
+    'no.qwe.wiki' : 'https://ntvsw.com/code/native.js?h=waWQiOjEwMDU0MjcsInNpZCI6MTAxMjkzMSwid2lkIjo1ODQ4Nywic3JjIjoyfQ==eyJ',
+
+    'sv.qwe.wiki' : 'https://ntvsw.com/code/native.js?h=waWQiOjEwMDU0MjcsInNpZCI6MTAxMjkzMSwid2lkIjo1ODQ4Nywic3JjIjoyfQ==eyJ',
+    'da.qwe.wiki' : 'https://ntvsw.com/code/native.js?h=waWQiOjEwMDU0MjcsInNpZCI6MTAxMjkzMSwid2lkIjo1ODQ4Nywic3JjIjoyfQ==eyJ',
+    'fi.qwe.wiki' : 'https://ntvsw.com/code/native.js?h=waWQiOjEwMDU0MjcsInNpZCI6MTAxMjkzMSwid2lkIjo1ODQ4Nywic3JjIjoyfQ==eyJ',
+    'hu.qwe.wiki' : 'https://ntvsw.com/code/native.js?h=waWQiOjEwMDU0MjcsInNpZCI6MTAxMjkzMSwid2lkIjo1ODQ4Nywic3JjIjoyfQ==eyJ',
+    'ro.qwe.wiki' : 'https://ntvsw.com/code/native.js?h=waWQiOjEwMDU0MjcsInNpZCI6MTAxMjkzMSwid2lkIjo1ODQ4Nywic3JjIjoyfQ==eyJ',
+
+    'cs.qaz.wiki' : 'https://sntjim.com/code/native.js?h=waWQiOjEwMDU0MjcsInNpZCI6MTAxMjkzMSwid2lkIjoxMzE4MTEsInNyYyI6Mn0=eyJ',
+    'de.qaz.wiki' : 'https://sntjim.com/code/native.js?h=waWQiOjEwMDU0MjcsInNpZCI6MTAxMjkzMSwid2lkIjoxMzE4MTEsInNyYyI6Mn0=eyJ',
+    'es.qaz.wiki' : 'https://sntjim.com/code/native.js?h=waWQiOjEwMDU0MjcsInNpZCI6MTAxMjkzMSwid2lkIjoxMzE4MTEsInNyYyI6Mn0=eyJ',
+    'fr.qaz.wiki' : 'https://sntjim.com/code/native.js?h=waWQiOjEwMDU0MjcsInNpZCI6MTAxMjkzMSwid2lkIjoxMzE4MTEsInNyYyI6Mn0=eyJ',
+    'it.qaz.wiki' : 'https://sntjim.com/code/native.js?h=waWQiOjEwMDU0MjcsInNpZCI6MTAxMjkzMSwid2lkIjoxMzE4MTEsInNyYyI6Mn0=eyJ',
+    'nl.qaz.wiki' : 'https://sntjim.com/code/native.js?h=waWQiOjEwMDU0MjcsInNpZCI6MTAxMjkzMSwid2lkIjoxMzE4MTEsInNyYyI6Mn0=eyJ',
+    'pl.qaz.wiki' : 'https://sntjim.com/code/native.js?h=waWQiOjEwMDU0MjcsInNpZCI6MTAxMjkzMSwid2lkIjoxMzE4MTEsInNyYyI6Mn0=eyJ',
+    'pt.qaz.wiki' : 'https://sntjim.com/code/native.js?h=waWQiOjEwMDU0MjcsInNpZCI6MTAxMjkzMSwid2lkIjoxMzE4MTEsInNyYyI6Mn0=eyJ',
+    'ru.qaz.wiki' : 'https://sntjim.com/code/native.js?h=waWQiOjEwMDU0MjcsInNpZCI6MTAxMjkzMSwid2lkIjoxMzE4MTEsInNyYyI6Mn0=eyJ',
+    'tr.qaz.wiki' : 'https://sntjim.com/code/native.js?h=waWQiOjEwMDU0MjcsInNpZCI6MTAxMjkzMSwid2lkIjoxMzE4MTEsInNyYyI6Mn0=eyJ',
+    'no.qaz.wiki' : 'https://sntjim.com/code/native.js?h=waWQiOjEwMDU0MjcsInNpZCI6MTAxMjkzMSwid2lkIjoxMzE4MTEsInNyYyI6Mn0=eyJ',
+
+    'sv.qaz.wiki' : 'https://sntjim.com/code/native.js?h=waWQiOjEwMDU0MjcsInNpZCI6MTAxMjkzMSwid2lkIjoxMzE4MTEsInNyYyI6Mn0=eyJ',
+    'da.qaz.wiki' : 'https://sntjim.com/code/native.js?h=waWQiOjEwMDU0MjcsInNpZCI6MTAxMjkzMSwid2lkIjoxMzE4MTEsInNyYyI6Mn0=eyJ',
+    'fi.qaz.wiki' : 'https://sntjim.com/code/native.js?h=waWQiOjEwMDU0MjcsInNpZCI6MTAxMjkzMSwid2lkIjoxMzE4MTEsInNyYyI6Mn0=eyJ',
+    'hu.qaz.wiki' : 'https://sntjim.com/code/native.js?h=waWQiOjEwMDU0MjcsInNpZCI6MTAxMjkzMSwid2lkIjoxMzE4MTEsInNyYyI6Mn0=eyJ',
+    'ro.qaz.wiki' : 'https://sntjim.com/code/native.js?h=waWQiOjEwMDU0MjcsInNpZCI6MTAxMjkzMSwid2lkIjoxMzE4MTEsInNyYyI6Mn0=eyJ',
+
+    'cs.qwertyu.wiki' : 'https://nativesubscribe.pro/code/native.js?h=waWQiOjEwMDU0MjcsInNpZCI6MTAxMjkzMSwid2lkIjo0NTE5Niwic3JjIjoyfQ==eyJ',
+    'de.qwertyu.wiki' : 'https://nativesubscribe.pro/code/native.js?h=waWQiOjEwMDU0MjcsInNpZCI6MTAxMjkzMSwid2lkIjo0NTE5Niwic3JjIjoyfQ==eyJ',
+    'es.qwertyu.wiki' : 'https://nativesubscribe.pro/code/native.js?h=waWQiOjEwMDU0MjcsInNpZCI6MTAxMjkzMSwid2lkIjo0NTE5Niwic3JjIjoyfQ==eyJ',
+    'fr.qwertyu.wiki' : 'https://nativesubscribe.pro/code/native.js?h=waWQiOjEwMDU0MjcsInNpZCI6MTAxMjkzMSwid2lkIjo0NTE5Niwic3JjIjoyfQ==eyJ',
+    'it.qwertyu.wiki' : 'https://nativesubscribe.pro/code/native.js?h=waWQiOjEwMDU0MjcsInNpZCI6MTAxMjkzMSwid2lkIjo0NTE5Niwic3JjIjoyfQ==eyJ',
+    'nl.qwertyu.wiki' : 'https://nativesubscribe.pro/code/native.js?h=waWQiOjEwMDU0MjcsInNpZCI6MTAxMjkzMSwid2lkIjo0NTE5Niwic3JjIjoyfQ==eyJ',
+    'pl.qwertyu.wiki' : 'https://nativesubscribe.pro/code/native.js?h=waWQiOjEwMDU0MjcsInNpZCI6MTAxMjkzMSwid2lkIjo0NTE5Niwic3JjIjoyfQ==eyJ',
+    'pt.qwertyu.wiki' : 'https://nativesubscribe.pro/code/native.js?h=waWQiOjEwMDU0MjcsInNpZCI6MTAxMjkzMSwid2lkIjo0NTE5Niwic3JjIjoyfQ==eyJ',
+    'ru.qwertyu.wiki' : 'https://nativesubscribe.pro/code/native.js?h=waWQiOjEwMDU0MjcsInNpZCI6MTAxMjkzMSwid2lkIjo0NTE5Niwic3JjIjoyfQ==eyJ',
+    'tr.qwertyu.wiki' : 'https://nativesubscribe.pro/code/native.js?h=waWQiOjEwMDU0MjcsInNpZCI6MTAxMjkzMSwid2lkIjo0NTE5Niwic3JjIjoyfQ==eyJ',
+    'no.qwertyu.wiki' : 'https://nativesubscribe.pro/code/native.js?h=waWQiOjEwMDU0MjcsInNpZCI6MTAxMjkzMSwid2lkIjo0NTE5Niwic3JjIjoyfQ==eyJ',
+
+    'sv.qwertyu.wiki' : 'https://nativesubscribe.pro/code/native.js?h=waWQiOjEwMDU0MjcsInNpZCI6MTAxMjkzMSwid2lkIjo0NTE5Niwic3JjIjoyfQ==eyJ',
+    'da.qwertyu.wiki' : 'https://nativesubscribe.pro/code/native.js?h=waWQiOjEwMDU0MjcsInNpZCI6MTAxMjkzMSwid2lkIjo0NTE5Niwic3JjIjoyfQ==eyJ',
+    'fi.qwertyu.wiki' : 'https://nativesubscribe.pro/code/native.js?h=waWQiOjEwMDU0MjcsInNpZCI6MTAxMjkzMSwid2lkIjo0NTE5Niwic3JjIjoyfQ==eyJ',
+    'hu.qwertyu.wiki' : 'https://nativesubscribe.pro/code/native.js?h=waWQiOjEwMDU0MjcsInNpZCI6MTAxMjkzMSwid2lkIjo0NTE5Niwic3JjIjoyfQ==eyJ',
+    'ro.qwertyu.wiki' : 'https://nativesubscribe.pro/code/native.js?h=waWQiOjEwMDU0MjcsInNpZCI6MTAxMjkzMSwid2lkIjo0NTE5Niwic3JjIjoyfQ==eyJ',
+};
+
+
+//---
+//--- propellerads.com
+//---
+
+var propellerads_h = '<script async="async" data-cfasync="false" src="//native.propellerclick.com/1?z=3236331"></script>';
+
+//---
+//--- adsterra.com
+//---
+//var adsterra_h = '<script async="async" data-cfasync="false" src="//pl15406824.passtechusa.com/2cfb0ca9a05271bec9710cc10258ce83/invoke.js"></script><div id="container-2cfb0ca9a05271bec9710cc10258ce83"></div>';
+
+
+//---
+//--- AdNow
+//---
+
+var adnow_h_id = {
+    'cs.qwe.wiki' : '666281',
+    'de.qwe.wiki' : '666279',
+    'es.qwe.wiki' : '666277',
+    'fr.qwe.wiki' : '666275',
+    'it.qwe.wiki' : '666273',
+    'nl.qwe.wiki' : '666270',
+    'pl.qwe.wiki' : '666268',
+    'pt.qwe.wiki' : '666266',
+    'ru.qwe.wiki' : '666264',
+    'tr.qwe.wiki' : '666259',
+    'no.qwe.wiki' : '744885',
+};
+
+ var adnow_v_id = {
+    'cs.qwe.wiki' : '666282',
+    'de.qwe.wiki' : '666280',
+    'es.qwe.wiki' : '666278',
+    'fr.qwe.wiki' : '666276',
+    'it.qwe.wiki' : '666274',
+    'nl.qwe.wiki' : '666271',
+    'pl.qwe.wiki' : '666269',
+    'pt.qwe.wiki' : '666267',
+    'ru.qwe.wiki' : '666265',
+    'tr.qwe.wiki' : '666260',
+    'no.qwe.wiki' : '744886',
+};
+
+var adnow_h_domain = {
+    'cs.qwe.wiki' : 'n.ads1-adnow.com',
+    'de.qwe.wiki' : 'n.ads1-adnow.com',
+    'es.qwe.wiki' : 'n.ads1-adnow.com',
+    'fr.qwe.wiki' : 'n.ads1-adnow.com',
+    'it.qwe.wiki' : 'n.ads1-adnow.com',
+    'nl.qwe.wiki' : 'n.ads1-adnow.com',
+    'pl.qwe.wiki' : 'n.ads1-adnow.com',
+    'pt.qwe.wiki' : 'n.ads1-adnow.com',
+    'ru.qwe.wiki' : 'n.ads1-adnow.com',
+    'tr.qwe.wiki' : 'n.ads1-adnow.com',
+    'no.qwe.wiki' : 'n.ads1-adnow.com',
+};
+
+var adnow_h_script = {
+    'cs.qwe.wiki' : '//st-n.ads1-adnow.com/js/a.js',
+    'de.qwe.wiki' : '//st-n.ads1-adnow.com/js/a.js',
+    'es.qwe.wiki' : '//st-n.ads1-adnow.com/js/a.js',
+    'fr.qwe.wiki' : '//st-n.ads1-adnow.com/js/a.js',
+    'it.qwe.wiki' : '//st-n.ads1-adnow.com/js/a.js',
+    'nl.qwe.wiki' : '//st-n.ads1-adnow.com/js/a.js',
+    'pl.qwe.wiki' : '//st-n.ads1-adnow.com/js/a.js',
+    'pt.qwe.wiki' : '//st-n.ads1-adnow.com/js/a.js',
+    'ru.qwe.wiki' : '//st-n.ads1-adnow.com/js/a.js',
+    'tr.qwe.wiki' : '//st-n.ads1-adnow.com/js/a.js',
+    'no.qwe.wiki' : '//st-n.ads1-adnow.com/js/a.js',
+};
+
+var adnow_v_domain = {
+    'cs.qwe.wiki' : 'n.ads1-adnow.com',
+    'de.qwe.wiki' : 'n.ads1-adnow.com',
+    'es.qwe.wiki' : 'n.ads1-adnow.com',
+    'fr.qwe.wiki' : 'n.ads1-adnow.com',
+    'it.qwe.wiki' : 'n.ads1-adnow.com',
+    'nl.qwe.wiki' : 'n.ads1-adnow.com',
+    'pl.qwe.wiki' : 'n.ads1-adnow.com',
+    'pt.qwe.wiki' : 'n.ads1-adnow.com',
+    'ru.qwe.wiki' : 'n.ads1-adnow.com',
+    'tr.qwe.wiki' : 'n.ads1-adnow.com',
+    'no.qwe.wiki' : 'n.ads1-adnow.com',
+};
+
+var adnow_v_script = {
+    'cs.qwe.wiki' : '//st-n.ads1-adnow.com/js/a.js',
+    'de.qwe.wiki' : '//st-n.ads1-adnow.com/js/a.js',
+    'es.qwe.wiki' : '//st-n.ads1-adnow.com/js/a.js',
+    'fr.qwe.wiki' : '//st-n.ads1-adnow.com/js/a.js',
+    'it.qwe.wiki' : '//st-n.ads1-adnow.com/js/a.js',
+    'nl.qwe.wiki' : '//st-n.ads1-adnow.com/js/a.js',
+    'pl.qwe.wiki' : '//st-n.ads1-adnow.com/js/a.js',
+    'pt.qwe.wiki' : '//st-n.ads1-adnow.com/js/a.js',
+    'ru.qwe.wiki' : '//st-n.ads1-adnow.com/js/a.js',
+    'tr.qwe.wiki' : '//st-n.ads1-adnow.com/js/a.js',
+    'no.qwe.wiki' : '//st-n.ads1-adnow.com/js/a.js',
+};
+
+//---
+//--- MGID
+//---
+
+var mgid_left_div = {
+    'cs.qaz.wiki' : '<div id="M445644ScriptRootC395666"><div id="M445644PreloadC395666">loading...</div></div>',
+    'de.qaz.wiki' : '<div id="M445645ScriptRootC395667"><div id="M445645PreloadC395667">loading...</div></div>',
+    'es.qaz.wiki' : '<div id="M445646ScriptRootC395668"><div id="M445646PreloadC395668">loading...</div></div>',
+    'fr.qaz.wiki' : '<div id="M445647ScriptRootC395669"><div id="M445647PreloadC395669">loading...</div></div>',
+    'it.qaz.wiki' : '<div id="M445648ScriptRootC395670"><div id="M445648PreloadC395670">loading...</div></div>',
+    'nl.qaz.wiki' : '<div id="M445649ScriptRootC395556"><div id="M445649PreloadC395556">loading...</div></div>',
+    'pl.qaz.wiki' : '<div id="M445650ScriptRootC395671"><div id="M445650PreloadC395671">loading...</div></div>',
+    'pt.qaz.wiki' : '<div id="M445651ScriptRootC395672"><div id="M445651PreloadC395672">loading...</div></div>',
+    'ru.qaz.wiki' : '<div id="M445643ScriptRootC395648"><div id="M445643PreloadC395648">loading...</div></div>',
+    'tr.qaz.wiki' : '<div id="M445653ScriptRootC395674"><div id="M445653PreloadC395674">loading...</div></div>',
+    'no.qaz.wiki' : '<div id="M569023ScriptRootC876239"><div id="M569023PreloadC876239">loading...</div></div>',
+
+    'sv.qaz.wiki' : '<div id="M628847ScriptRootC992526"><div id="M628847PreloadC992526">loading...</div></div>',
+    'da.qaz.wiki' : '<div id="M628848ScriptRootC992534"><div id="M628848PreloadC992534">loading...</div></div>',
+    'fi.qaz.wiki' : '<div id="M628849ScriptRootC992541"><div id="M628849PreloadC992541">loading...</div></div>',
+    'hu.qaz.wiki' : '<div id="M628850ScriptRootC992545"><div id="M628850PreloadC992545">loading...</div></div>',
+    'ro.qaz.wiki' : '<div id="M628851ScriptRootC992554"><div id="M628851PreloadC992554">loading...</div></div>',
+};
+
+var mgid_left_func = {
+    'cs.qaz.wiki' : '//jsc.mgid.com/c/s/cs.qwerty.wiki.395666.js',
+    'de.qaz.wiki' : '//jsc.mgid.com/d/e/de.qwerty.wiki.395667.js',
+    'es.qaz.wiki' : '//jsc.mgid.com/e/s/es.qwerty.wiki.395668.js',
+    'fr.qaz.wiki' : '//jsc.mgid.com/f/r/fr.qwerty.wiki.395669.js',
+    'it.qaz.wiki' : '//jsc.mgid.com/i/t/it.qwerty.wiki.395670.js',
+    'nl.qaz.wiki' : '//jsc.mgid.com/n/l/nl.qwerty.wiki.395556.js',
+    'pl.qaz.wiki' : '//jsc.mgid.com/p/l/pl.qwerty.wiki.395671.js',
+    'pt.qaz.wiki' : '//jsc.mgid.com/p/t/pt.qwerty.wiki.395672.js',
+    'ru.qaz.wiki' : '//jsc.mgid.com/r/u/ru.qwerty.wiki.395648.js',
+    'tr.qaz.wiki' : '//jsc.mgid.com/t/r/tr.qwerty.wiki.395674.js',
+    'no.qaz.wiki' : '//jsc.mgid.com/n/o/no.qwe.wiki.876239.js',
+    'sv.qaz.wiki' : '//jsc.mgid.com/s/v/sv.qwe.wiki.992526.js',
+    'da.qaz.wiki' : '//jsc.mgid.com/d/a/da.qwe.wiki.992534.js',
+    'fi.qaz.wiki' : '//jsc.mgid.com/f/i/fi.qwe.wiki.992541.js',
+    'hu.qaz.wiki' : '//jsc.mgid.com/h/u/hu.qwe.wiki.992545.js',
+    'ro.qaz.wiki' : '//jsc.mgid.com/r/o/ro.qwe.wiki.992554.js',
+};
+
+var mgid_article_div = {
+    'cs.qaz.wiki' : '<div id="M445644ScriptRootC395899"><div id="M445644PreloadC395899">Loading...</div></div>',
+    'de.qaz.wiki' : '<div id="M445645ScriptRootC395903"><div id="M445645PreloadC395903">Loading...</div></div>',
+    'es.qaz.wiki' : '<div id="M445646ScriptRootC395906"><div id="M445646PreloadC395906">Loading...</div></div>',
+    'fr.qaz.wiki' : '<div id="M445647ScriptRootC395910"><div id="M445647PreloadC395910">Loading...</div></div>',
+    'it.qaz.wiki' : '<div id="M445648ScriptRootC395913"><div id="M445648PreloadC395913">Loading...</div></div>',
+    'nl.qaz.wiki' : '<div id="M445649ScriptRootC395916"><div id="M445649PreloadC395916">Loading...</div></div>',
+    'pl.qaz.wiki' : '<div id="M445650ScriptRootC395919"><div id="M445650PreloadC395919">Loading...</div></div>',
+    'pt.qaz.wiki' : '<div id="M445651ScriptRootC395921"><div id="M445651PreloadC395921">Loading...</div></div>',
+    'ru.qaz.wiki' : '<div id="M445643ScriptRootC395891"><div id="M445643PreloadC395891">Loading...</div></div>',
+    'tr.qaz.wiki' : '<div id="M445653ScriptRootC395926"><div id="M445653PreloadC395926">Loading...</div></div>',
+    'no.qaz.wiki' : '<div id="M569023ScriptRootC876241"><div id="M569023PreloadC876241">Loading...</div></div>',
+
+    'sv.qaz.wiki' : '<div id="M628847ScriptRootC992531"><div id="M628847PreloadC992531">Loading...</div></div>',
+    'da.qaz.wiki' : '<div id="M628848ScriptRootC992538"><div id="M628848PreloadC992538">Loading...</div></div>',
+    'fi.qaz.wiki' : '<div id="M628849ScriptRootC992543"><div id="M628849PreloadC992543">Loading...</div></div>',
+    'hu.qaz.wiki' : '<div id="M628850ScriptRootC992548"><div id="M628850PreloadC992548">Loading...</div></div>',
+    'ro.qaz.wiki' : '<div id="M628851ScriptRootC992555"><div id="M628851PreloadC992555">Loading...</div></div>',
+};
+
+var mgid_article_func = {
+    'cs.qaz.wiki' : '//jsc.mgid.com/c/s/cs.qwerty.wiki.395899.js',
+    'de.qaz.wiki' : '//jsc.mgid.com/d/e/de.qwerty.wiki.395903.js',
+    'es.qaz.wiki' : '//jsc.mgid.com/e/s/es.qwerty.wiki.395906.js',
+    'fr.qaz.wiki' : '//jsc.mgid.com/f/r/fr.qwerty.wiki.395910.js',
+    'it.qaz.wiki' : '//jsc.mgid.com/i/t/it.qwerty.wiki.395913.js',
+    'nl.qaz.wiki' : '//jsc.mgid.com/n/l/nl.qwerty.wiki.395916.js',
+    'pl.qaz.wiki' : '//jsc.mgid.com/p/l/pl.qwerty.wiki.395919.js',
+    'pt.qaz.wiki' : '//jsc.mgid.com/p/t/pt.qwerty.wiki.395921.js',
+    'ru.qaz.wiki' : '//jsc.mgid.com/r/u/ru.qwerty.wiki.395891.js',
+    'tr.qaz.wiki' : '//jsc.mgid.com/t/r/tr.qwerty.wiki.395926.js',
+    'no.qaz.wiki' : '//jsc.mgid.com/n/o/no.qwe.wiki.876241.js',
+
+    'sv.qaz.wiki' : '//jsc.mgid.com/s/v/sv.qwe.wiki.992531.js',
+    'da.qaz.wiki' : '//jsc.mgid.com/d/a/da.qwe.wiki.992538.js',
+    'fi.qaz.wiki' : '//jsc.mgid.com/f/i/fi.qwe.wiki.992543.js',
+    'hu.qaz.wiki' : '//jsc.mgid.com/h/u/hu.qwe.wiki.992548.js',
+    'ro.qaz.wiki' : '//jsc.mgid.com/r/o/ro.qwe.wiki.992555.js',
+};
+
+
+var mgid_composite_div = {
+    'cs.qaz.wiki' : '<div id="M445644ScriptRootC1003419"><div id="M445644PreloadC1003419">Loading...</div></div>',
+    'de.qaz.wiki' : '<div id="M445645ScriptRootC1003420"><div id="M445645PreloadC1003420">Loading...</div></div>',
+    'es.qaz.wiki' : '<div id="M445646ScriptRootC1003421"><div id="M445646PreloadC1003421">Loading...</div></div>',
+    'fr.qaz.wiki' : '<div id="M445647ScriptRootC1003422"><div id="M445647PreloadC1003422">Loading...</div></div>',
+    'it.qaz.wiki' : '<div id="M445648ScriptRootC1003423"><div id="M445648PreloadC1003423">Loading...</div></div>',
+    'nl.qaz.wiki' : '<div id="M445649ScriptRootC1003427"><div id="M445649PreloadC1003427">Loading...</div></div>',
+    'pl.qaz.wiki' : '<div id="M445650ScriptRootC1003430"><div id="M445650PreloadC1003430">Loading...</div></div>',
+    'pt.qaz.wiki' : '<div id="M445651ScriptRootC1003432"><div id="M445651PreloadC1003432">Loading...</div></div>',
+    'ru.qaz.wiki' : '<div id="M445643ScriptRootC1003418"><div id="M445643PreloadC1003418">Loading...</div></div>',
+    'tr.qaz.wiki' : '<div id="M445653ScriptRootC1003454"><div id="M445653PreloadC1003454">Loading...</div></div>',
+    'no.qaz.wiki' : '<div id="M569023ScriptRootC1003457"><div id="M569023PreloadC1003457">Loading...</div></div>',
+    'sv.qaz.wiki' : '<div id="M628847ScriptRootC1003461"><div id="M628847PreloadC1003461">Loading...</div></div>',
+    'da.qaz.wiki' : '<div id="M628848ScriptRootC1003472"><div id="M628848PreloadC1003472">Loading...</div></div>',
+    'fi.qaz.wiki' : '<div id="M628849ScriptRootC1003477"><div id="M628849PreloadC1003477">Loading...</div></div>',
+    'hu.qaz.wiki' : '<div id="M628850ScriptRootC1003483"><div id="M628850PreloadC1003483">Loading...</div></div>',
+    'ro.qaz.wiki' : '<div id="M628851ScriptRootC1003491"><div id="M628851PreloadC1003491">Loading...</div></div>',
+};
+
+var mgid_composite_func = {
+    'cs.qaz.wiki' : 'https://jsc.mgid.com/c/s/cs.qwerty.wiki.1003419.js',
+    'de.qaz.wiki' : 'https://jsc.mgid.com/d/e/de.qwerty.wiki.1003420.js',
+    'es.qaz.wiki' : 'https://jsc.mgid.com/e/s/es.qwerty.wiki.1003421.js',
+    'fr.qaz.wiki' : 'https://jsc.mgid.com/f/r/fr.qwerty.wiki.1003422.js',
+    'it.qaz.wiki' : 'https://jsc.mgid.com/i/t/it.qwerty.wiki.1003423.js',
+    'nl.qaz.wiki' : 'https://jsc.mgid.com/n/l/nl.qwerty.wiki.1003427.js',
+    'pl.qaz.wiki' : 'https://jsc.mgid.com/p/l/pl.qwerty.wiki.1003430.js',
+    'pt.qaz.wiki' : 'https://jsc.mgid.com/p/t/pt.qwerty.wiki.1003432.js',
+    'ru.qaz.wiki' : 'https://jsc.mgid.com/r/u/ru.qwerty.wiki.1003418.js',
+    'tr.qaz.wiki' : 'https://jsc.mgid.com/t/r/tr.qwerty.wiki.1003454.js',
+    'no.qaz.wiki' : 'https://jsc.mgid.com/n/o/no.qwe.wiki.1003457.js',
+    'sv.qaz.wiki' : 'https://jsc.mgid.com/s/v/sv.qwe.wiki.1003461.js',
+    'da.qaz.wiki' : 'https://jsc.mgid.com/d/a/da.qwe.wiki.1003472.js',
+    'fi.qaz.wiki' : 'https://jsc.mgid.com/f/i/fi.qwe.wiki.1003477.js',
+    'hu.qaz.wiki' : 'https://jsc.mgid.com/h/u/hu.qwe.wiki.1003483.js',
+    'ro.qaz.wiki' : 'https://jsc.mgid.com/r/o/ro.qwe.wiki.1003491.js',
+};
+
+
+//---
+//--- CLICKIO
+//---
+
+//var clickio_square = "<script async type='text/javascript' src='//s.clickiocdn.com/t/common_258.js'></script><script class='__lxGc__' type='text/javascript'>((__lxGc__=window.__lxGc__||{'s':{},'b':0})['s']['_216928']=__lxGc__['s']['_216928']||{'b':{}})['b']['_642581']={'i':__lxGc__.b++};</script>";
+
+//var clickio_square_mod = "<div style='float: left;'><script async type='text/javascript' src='//s.clickiocdn.com/t/common_258.js'></script><script class='__lxGc__' type='text/javascript'>((__lxGc__=window.__lxGc__||{'s':{},'b':0})['s']['_216928']=__lxGc__['s']['_216928']||{'b':{}})['b']['_642581']={'i':__lxGc__.b++};</script></div>";
+// 336x280-2020/01/15
+var clickio_square_mod = "<script async type='text/javascript' src='//s.clickiocdn.com/t/220206/360_light.js'></script><script class='__lxGc__' type='text/javascript'>((__lxGc__=window.__lxGc__||{'s':{},'b':0})['s']['_220206']=__lxGc__['s']['_220206']||{'b':{}})['b']['_671629']={'i':__lxGc__.b++};</script>";
+
+// 336x280-2020/01/15
+//var clickio_square_mod_200x446 = "<div style='float: left;'><script async type='text/javascript' src='//s.clickiocdn.com/t/common_258.js'></script><script class='__lxGc__' type='text/javascript'>((__lxGc__=window.__lxGc__||{'s':{},'b':0})['s']['_216928']=__lxGc__['s']['_216928']||{'b':{}})['b']['_651055']={'i':__lxGc__.b++};</script></div>";
+
+//var clickio_left_current_height = 120;
+//var clickio_left_mod = "<script async type='text/javascript' src='//s.clickiocdn.com/t/220206/360_light.js'></script><script class='__lxGc__' type='text/javascript'>((__lxGc__=window.__lxGc__||{'s':{},'b':0})['s']['_220206']=__lxGc__['s']['_220206']||{'b':{}})['b']['_671639']={'i':__lxGc__.b++};</script>";
+
+//clickio_left_mod[120] = "<script async type='text/javascript' src='//s.clickiocdn.com/t/common_258.js'></script><script class='__lxGc__' type='text/javascript'>console.error('cl begin');((__lxGc__=window.__lxGc__||{'s':{},'b':0})['s']['_216928']=__lxGc__['s']['_216928']||{'b':{}})['b']['_642634']={'i':__lxGc__.b++};console.error('cl end');</script>";
+//clickio_left_mod[120] = "<script async type='text/javascript' src='//s.clickiocdn.com/t/common_258.js'></script><script class='__lxGc__' type='text/javascript'>((__lxGc__=window.__lxGc__||{'s':{},'b':0})['s']['_216928']=__lxGc__['s']['_216928']||{'b':{}})['b']['_642634']={'i':__lxGc__.b++};</script>";
+
+clickio_left_mod_multi_stick = "<script async type='text/javascript' src='//s.clickiocdn.com/t/220206/360_light.js'></script><script class='__lxGc__' type='text/javascript'>((__lxGc__=window.__lxGc__||{'s':{},'b':0})['s']['_220206']=__lxGc__['s']['_220206']||{'b':{}})['b']['_671639']={'i':__lxGc__.b++};</script>";
+
+//clickio_responsive = "<script async type='text/javascript' src='//s.clickiocdn.com/t/common_258.js'></script><script class='__lxGc__' type='text/javascript'>((__lxGc__=window.__lxGc__||{'s':{},'b':0})['s']['_216928']=__lxGc__['s']['_216928']||{'b':{}})['b']['_642518']={'i':__lxGc__.b++};</script>";
+
+clickio_horizont = "<script async type='text/javascript' src='//s.clickiocdn.com/t/220206/360_light.js'></script><script class='__lxGc__' type='text/javascript'>((__lxGc__=window.__lxGc__||{'s':{},'b':0})['s']['_220206']=__lxGc__['s']['_220206']||{'b':{}})['b']['_671637']={'i':__lxGc__.b++};</script>";
+
+//var clickio_square_mod_3 = clickio_square_mod + clickio_square_mod + clickio_square_mod + "</div><div style='clear: left'>"; 
+
+
+//---
+//--- The Moneytizer
+//---
+//var themoneytizer_square_mod = '<div id="55182-2"><script src="//ads.themoneytizer.com/s/gen.js?type=2"></script><script src="//ads.themoneytizer.com/s/requestform.js?siteId=55182&formatId=2"></script></div>';
+//
+//var themoneytizer_billboard_mod = '<div style="text-align:center;" id="55182-31"><script src="//ads.themoneytizer.com/s/gen.js?type=31"></script><script src="//ads.themoneytizer.com/s/requestform.js?siteId=55182&formatId=31"></script></div>';
+
+//---
+//--- Google
+//---
+/*
+var ga_article = 
+"<ins class=\"adsbygoogle\"\n" +
+"     style=\"display:block; text-align:center;\"\n" +
+"     data-ad-layout=\"in-article\"\n" +
+"     data-ad-format=\"fluid\"\n" +
+"     data-ad-client=\"ca-pub-1329347597508497\"\n" +
+"     data-ad-slot=\"7698314161\"></ins>\n" +
+"<script>\n" +
+"     (adsbygoogle = window.adsbygoogle || []).push({});\n" +
+"</script>\n";
+
+//"     data-alternate-ad-url=\"https://ru.qwerty.wiki/alt.html\"\n" +
+var ga_publicidad_right = 
+"<ins class=\"adsbygoogle\"\n" +
+"     style=\"display:block\"\n" +
+"     data-ad-client=\"ca-pub-1329347597508497\"\n" +
+"     data-ad-slot=\"5904820530\"\n" +
+"     data-ad-format=\"auto\"\n" +
+"     data-full-width-responsive=\"true\"></ins>\n" +
+"<script>\n" +
+"(adsbygoogle = window.adsbygoogle || []).push({});\n" +
+"</script>\n <br />";
+
+//<!-- media_horizontal -->
+////7839432234
+var ga_media_horizontal=
+"<ins class=\"adsbygoogle\"\n" +
+"     style=\"display:block\"\n" +
+"     data-ad-client=\"ca-pub-1329347597508497\"\n" +
+"     data-ad-slot=\"7839432234\"\n" +
+"     data-ad-format=\"auto\"\n" +
+"     data-full-width-responsive=\"true\"></ins>\n" +
+"<script>\n" +
+"(adsbygoogle = window.adsbygoogle || []).push({});\n" +
+"</script>\n <br />";
+
+//<!-- link_square -->
+var ga_link_square = 
+"<ins class=\"adsbygoogle\"\n" +
+"style=\"display:block\"\n" +
+"data-ad-client=\"ca-pub-1329347597508497\"\n" +
+"data-ad-slot=\"5576230978\"\n" +
+"data-ad-format=\"link\"\n" +
+"data-full-width-responsive=\"true\"></ins>\n" +
+"<script>\n" +
+"(adsbygoogle = window.adsbygoogle || []).push({});\n" +
+"</script>\n <br />";
+
+//<!-- link_horizontal -->
+var ga_link_horizontal =     
+"<ins class=\"adsbygoogle\"\n" +
+"style=\"display:block\"\n" +
+"data-ad-client=\"ca-pub-1329347597508497\"\n" +
+"data-ad-slot=\"7249664470\"\n" +
+"data-ad-format=\"link\"\n" +
+"data-full-width-responsive=\"true\"></ins>\n" +
+"<script>\n" +
+"(adsbygoogle = window.adsbygoogle || []).push({});\n" +
+"</script>\n <br />";
+*/
+
+//-------------------
+//--- MAIN BLOCK ---
+//-----------------
+
+document.oncopy = copy_right;
+//document.addEventListener('copy', copy_right);
+
+//function addLink() {
+//    //Get the selected text and append the extra info
+//    var selection = window.getSelection();
+//    pagelink = "<br />Read <i>more</i> at: <br />" + document.location.href;
+//    copytext = selection + pagelink;
+//	//Create a new div to hold the prepared text
+//    newdiv = document.createElement('div');
+//
+//    //hide the newly created container
+//    newdiv.style.position = 'absolute';
+//    newdiv.style.left = '-99999px';
+//
+//    //insert the container, fill it with the extended text, and define the new selection
+//    document.body.appendChild(newdiv);
+//    newdiv.innerHTML = copytext;
+//    console.log(newdiv.innerHTML.toString());
+//    newdiv.innerHTML = newdiv.innerHTML.toString();
+////temp.innerHTML = preCaretRange.toString();
+//
+//    selection.selectAllChildren(newdiv);
+//
+//    window.setTimeout(function () {
+//        document.body.removeChild(newdiv);
+//    }, 100);
+//}
+//document.addEventListener('copy', addLink);
+//
+//****************************************
+//document.oncopy = function () {
+//  var bodyElement = document.body; 
+//  var selection = getSelection(); 
+//  var href = document.location.href; 
+//  var copyright = 'Источник: <a href="'+ href +'">' + href + '</a>'; 
+//  var text = selection + copyright;
+//  var divElement = document.createElement('div'); 
+//  divElement.style.position = 'absolute'; 
+//  divElement.style.left = '-99999px'; 
+//  text1 = document.createTextNode(text); //создал текстовый узел
+//  divElement.appendChild(text1); //и добавил его
+//  bodyElement.appendChild(divElement); 
+//  selection.selectAllChildren(divElement); 
+//  setTimeout(function(){
+//    bodyElement.removeChild(divElement); 
+//  }, 0);
+//};
+//****************************************
+
+function start() {
+    console.log('start');
+    console.log(window.location.pathname);
+    //var timerAd = setTimeout(detecta, 1000);
+    //copy_right();
+    detecta();
+    publicidad();
+
+}
+
+
+function copy_right() {
+    console.log('Copy Right ...', location.hostname);
+    var cr_h1_arr = document.querySelectorAll("h1");
+    console.log(cr_h1_arr.length);
+    if (cr_h1_arr.length > 0)
+    {
+        console.log("document.location.href", document.location.href);
+        var cr_h1_innerHTML = cr_h1_arr[0].innerHTML;
+        console.log("cr_h1_innerHTML", cr_h1_innerHTML);
+        var cr_h1_pos = cr_h1_innerHTML.search(/\s*-\s*<span class="notranslate">/gm);
+        console.log("cr_h1_pos", cr_h1_pos);
+        var cr_h1_title = cr_h1_innerHTML.substr(0,cr_h1_pos);
+        console.log("cr_h1_title", cr_h1_title);
+
+        var bodyElement = document.body; 
+        var selection = getSelection(); 
+        var href = document.location.href; 
+        //var copyright = 'Источник: <a href="'+ href +'">' + href + '</a>'; 
+        var copyright = "<br /><a href='"+document.location.href+"'>"+cr_h1_title+"</a><br />";; 
+        var text = selection + copyright;
+        var divElement = document.createElement('div'); 
+        divElement.style.position = 'absolute'; 
+        divElement.style.left = '-99999px'; 
+        text1 = document.createTextNode(text); //создал текстовый узел
+        divElement.appendChild(text1); //и добавил его
+        bodyElement.appendChild(divElement); 
+        selection.selectAllChildren(divElement); 
+        setTimeout(function(){
+          bodyElement.removeChild(divElement); 
+        }, 0);
+    }
+    
+}
+
+function detecta() {
+    console.log('Begin detecta 1 ...', location.hostname);
+    var adDetect = $('#jahYiepai2Rash0K:visible').length;
+    //console.log(adDetect);
+    if (!adDetect) {
+        console.log('adblock on');
+    }
+    else
+    {
+        console.log('adblock off');
+    }
+}
+
+function publicidad() {
+    console.log('Begin Publicadad 3 ...', location.hostname);
+
+    //var ind_random = Date.now()%2;
+    var ind_random = 1;
+    
+    //-------------------
+    // make header block
+    var w_count = 0;
+    var w_count_2 = 0;
+    //var w1 = 336;
+    var w1 = 346;
+    var w_2 = 200;
+    var w_left_col = 160;
+    var w_margin_padding = 57;
+    var w_any_bag = 20;
+    var w_avail = document.body.clientWidth - w1 - w_left_col - w_margin_padding - w_any_bag;
+    var w_avail2 = document.body.clientWidth - w_2 - w_left_col - w_margin_padding - w_any_bag;
+    
+    var clickio_square_mod_block = '';
+//    
+    //clickio_square_mod_block = clickio_horizont;
+//    
+    for(w = 0; w < w_avail; w+=w1)
+    {
+       clickio_square_mod_block += clickio_square_mod;
+       w_count++;
+    }
+    // if the screen is quite small draw one block
+    if (w_count == 0) {
+        clickio_square_mod_block = clickio_square_mod;
+    }
+//    
+    console.log('w_avail', w_avail);
+    console.log('w_count', w_count);
+    // add line feed
+    var clickio_square_mod_block = clickio_square_mod_block + "</div><div style='clear: left'>"; 
+    //var clickio_square_mod_block = "<div style='float: left'>" + clickio_square_mod_block + "</div><div style='clear: left'></div>"; 
+
+    
+    //// clickio_square_mod_200x446
+    //var clickio_square_mod_block_2 = '';
+    //for(w = 0; w < w_avail; w+=w_2)
+    //{
+    //   clickio_square_mod_block_2 += clickio_square_mod_200x446;
+    //   w_count_2++;
+    //}
+    //// if the screen is quite small draw one block
+    //if (w_count_2 == 0) {
+    //    var clickio_square_mod_block_2 = clickio_square_mod_200x446;
+    //}
+    //console.log('w_count_2', w_count_2);
+    //// add line feed
+    //var clickio_square_mod_block_2 = clickio_square_mod_block_2 + "</div><div style='clear: left'>"; 
+
+    //-----------------
+    // make left block
+    var scrollHeight = Math.max(
+        document.body.scrollHeight, document.documentElement.scrollHeight,
+        document.body.offsetHeight, document.documentElement.offsetHeight,
+        document.body.clientHeight, document.documentElement.clientHeight
+    );
+    console.log('scrollHeight', scrollHeight);
+    
+    var h_count = 0;
+    var h_logo_lang_adv = 2020;
+    var h1 = 600;
+    var h_avail = scrollHeight - h_logo_lang_adv;
+    var h_max_count = 4;
+    //var clickio_left_mod_block = '';
+    //for(h = 0; h < h_avail; h+=h1)
+    //{
+    //   clickio_left_mod_block += clickio_left_mod + "</div><br /><div>";
+    //   h_count++;
+    //   if (h_max_count != 0 && h_count == h_max_count) break;
+    //}
+    console.log('h_count', h_count);
+    
+    // show ads every N replies
+    var adv_per_ans = 2;
+    var adv_per_ans_first_elem = null;
+    var TextSelector = 'h2';
+    var publicidad_top_main = document.querySelectorAll(TextSelector);
+    console.log('count ['+TextSelector+']', publicidad_top_main.length);
+    for (index = 0; index < publicidad_top_main.length; index++)
+    {
+        if (typeof publicidad_top_main[index] !== 'undefined')
+        {
+            var divide_end = publicidad_top_main.length - index ;
+            if (
+                index > 0 &&
+                index%adv_per_ans == 0 &&
+                divide_end > adv_per_ans
+                )
+            {
+                //console.log(index);
+                if (window.location.pathname != '/wiki/Main_Page')
+                {
+                    //console.log('start H');
+                    //console.log(w_count);
+                    //console.log(index);
+                    //console.log(adv_per_ans);
+                    
+                    if (index==adv_per_ans)
+                    {
+                        //if (!ind_random)
+                        if (ind_random)
+                        {
+                            console.log('mgid_article_func begin');
+                            $( publicidad_top_main[index] ).before(mgid_article_div[location.hostname]);
+                            //mgid_article_func[location.hostname]();
+                            $.getScript(mgid_article_func[location.hostname], function() {
+                            console.log("Script mgid_article_func loaded but not necessarily executed.");
+                            });
+                            console.log('mgid_article_func end');
+                        }
+                        else
+                        {
+                            $(publicidad_top_main[index]).replaceWith("<div id=\"SC_TBlock_"+adnow_h_id[location.hostname]+"\" class=\"SC_TBlock\"></div>");
+                            (sc_adv_out = window.sc_adv_out || []).push({
+                                id : adnow_h_id[location.hostname],
+                                domain : adnow_h_domain[location.hostname]
+                            });
+                        
+                            $.getScript(adnow_h_script[location.hostname], function() {
+                            console.log("Script a-now 'horisontal first' loaded but not necessarily executed.");
+                            });
+                        }
+                    }
+                    else
+                    {
+                        if (index==2*adv_per_ans)
+                        {
+                            //if (ind_random)
+                            if (!ind_random)
+                            {
+                                console.log('mgid_article_func begin');
+                                $( publicidad_top_main[index] ).before(mgid_article_div[location.hostname]);
+                                //mgid_article_func[location.hostname]();
+                                $.getScript(mgid_article_func[location.hostname], function() {
+                                console.log("Script mgid_article_func loaded but not necessarily executed.");
+                                });
+                                console.log('mgid_article_func end');
+                            }
+                            else
+                            {
+                                //var ind_random_adnow_mgid = Date.now()%2;
+
+                                //if (ind_random_adnow_mgid)
+                                //if (
+                                //        location.hostname == "it.qwe.wiki" ||
+                                //        location.hostname == "nl.qwe.wiki" ||
+                                //        location.hostname == "pl.qwe.wiki"
+                                //    )
+                                //{
+                                //    $(publicidad_top_main[index]).replaceWith("<div id=\"SC_TBlock_"+adnow_h_id[location.hostname]+"\" class=\"SC_TBlock\"></div>");
+                                //    (sc_adv_out = window.sc_adv_out || []).push({
+                                //        id : adnow_h_id[location.hostname],
+                                //        domain : adnow_h_domain[location.hostname]
+                                //    });
+                                //    
+                                //    $.getScript(adnow_h_script[location.hostname], function() {
+                                //    console.log("Script a-now 'horisontal first' loaded but not necessarily executed.");
+                                //    });
+                                //}
+                                //else
+                                {
+                                    console.log('mgid_composite_func begin');
+                                    $( publicidad_top_main[index] ).before(mgid_composite_div[location.hostname]);
+                                    //mgid_composite_func[location.hostname]();
+                                    $.getScript(mgid_composite_func[location.hostname], function() {
+                                    console.log("Script mgid_composite_func loaded but not necessarily executed.");
+                                    });
+                                    console.log('mgid_composite_func end');
+                                }                                
+                            }
+                            
+                        }
+                        else
+                        {
+                            // if one block in width (mobile version)
+                            if (w_count <= 1) {
+                                console.log('clickio mobile index', index);
+                                //if (index==4*adv_per_ans || index==6*adv_per_ans || index==8*adv_per_ans)
+                                {
+                                //$( publicidad_top_main[index] ).before(ga_link_horizontal);
+                                    $( publicidad_top_main[index] ).before(clickio_square_mod_block);
+                                }
+                            }
+                            else
+                            {
+                                if (index==4*adv_per_ans)
+                                {
+                                    //if (!ind_random)
+                                    //    $( publicidad_top_main[index] ).before(propellerads_h);
+                                    //else
+                                        //$( publicidad_top_main[index] ).before(adsterra_h);
+
+                                    $( publicidad_top_main[index] ).before(clickio_square_mod_block);
+                                    //$( publicidad_top_main[index] ).before(themoneytizer_billboard_mod);
+                                }
+                                //if (index==4*adv_per_ans || index==6*adv_per_ans || index==8*adv_per_ans)
+                                if (index==6*adv_per_ans || index==8*adv_per_ans)
+                                {
+                                
+                                //$( publicidad_top_main[index] ).before(ga_link_horizontal);
+                                    $( publicidad_top_main[index] ).before(clickio_square_mod_block);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+    }
+   
+    var elem_adv = "#firstHeading";
+    if (typeof $(elem_adv) !== 'undefined' && $(elem_adv).length)
+    {
+        $(elem_adv).after(clickio_square_mod_block);
+        //$(elem_adv).after(clickio_responsive);
+    }
+
+    //elem_adv = "#footer-info";
+    elem_adv = "#mw-body";
+    if ($(elem_adv) != 'undefined' && $(elem_adv).length)
+    {
+        //$($(elem_adv)).after(clickio_square_mod_block_2);
+        //$($(elem_adv)).after(clickio_horizont);
+        $($(elem_adv)).html(clickio_horizont);
+    }
+    
+    elem_adv = "#leftga1";
+    if ($(elem_adv) != 'undefined' && $(elem_adv).length)
+    {
+        if (ind_random)
+        {
+            $($(elem_adv)).after(mgid_left_div[location.hostname]);
+            //mgid_left_func[location.hostname]();
+            $.getScript(mgid_left_func[location.hostname], function() {
+            console.log("Script mgid_left_func loaded but not necessarily executed.");
+            });
+        }
+        else
+        {
+            //$(elem_adv).replaceWith("<div id=\"SC_TBlock_"+adnow_v_id[location.hostname]+"\" class=\"SC_TBlock\">loading3...</div>");
+            $(elem_adv).replaceWith("<div id=\"SC_TBlock_"+adnow_v_id[location.hostname]+"\" class=\"SC_TBlock\"></div>");
+            (sc_adv_out = window.sc_adv_out || []).push({
+                id : adnow_v_id[location.hostname],
+                domain : adnow_v_domain[location.hostname]
+            });
+        
+            $.getScript(adnow_v_script[location.hostname], function() {
+            console.log("Script a-now left-ga2 loaded but not necessarily executed.");
+            });
+        }
+    }
+        
+    //elem_adv = "#leftga2";
+    //if (typeof $(elem_adv) !== 'undefined' && $(elem_adv).length)
+    //{
+    //    if (!ind_random)
+    //    {
+    //        $($(elem_adv)).after(mgid_left_div[location.hostname]);
+    //        $.getScript(mgid_left_func[location.hostname], function() {
+    //        console.log("Script mgid_left_func loaded but not necessarily executed.");
+    //        });
+    //        //mgid_left_func[location.hostname]();
+    //    }
+    //    else
+    //    {
+    //        //$(elem_adv).replaceWith("<div id=\"SC_TBlock_"+adnow_v_id[location.hostname]+"\" class=\"SC_TBlock\">loading3...</div>");
+    //        $(elem_adv).replaceWith("<div id=\"SC_TBlock_"+adnow_v_id[location.hostname]+"\" class=\"SC_TBlock\"></div>");
+    //        (sc_adv_out = window.sc_adv_out || []).push({
+    //            id : adnow_v_id[location.hostname],
+    //            domain : adnow_v_domain[location.hostname]
+    //        });
+    //    
+    //        $.getScript(adnow_v_script[location.hostname], function() {
+    //        console.log("Script a-now left-ga2 loaded but not necessarily executed.");
+    //        });
+    //    }
+    //}
+    //
+    
+    
+    elem_adv = "#leftga3";
+    //console.error('left_ga3 before if');
+    if (typeof $(elem_adv) !== 'undefined' && $(elem_adv).length)
+    {
+        //console.error('left_ga3');
+        //$($(elem_adv)).after(clickio_left_mod_block);
+    }
+    
+    elem_adv = "#leftga4";
+    //console.error('left_ga4 before if');
+    if (typeof $(elem_adv) !== 'undefined' && $(elem_adv).length)
+    {
+        //console.error('leftga4');
+        $($(elem_adv)).after(clickio_left_mod_multi_stick);
+    }
+    
+    
+    console.log('End Publicadad...', location.hostname);
+
+}
+
+//---
+//--- evadav.com
+//---
+
+(function(d){
+    console.log("evadav begin");
+    //console.log(evadav[location.hostname]);
+    let s=d.createElement('script');s.async=true;s.src=evadav[location.hostname];d.head.appendChild(s);
+    console.log("evadav end");
+})(document);

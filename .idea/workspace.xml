@@ -1,7 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="1e937b08-838f-4932-be7c-325e3d499a35" name="Default Changelist" comment="" />
+    <list default="true" id="1e937b08-838f-4932-be7c-325e3d499a35" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/_ED/aula001a.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ED/aula001b.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ED/aula002a.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_apoio/O tipo abstrato de dados pilha.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki_files/1x1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki_files/34109fe397fdcff370079185bfdb65826cb5565a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki_files/360_light.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki_files/a601995d55609f2d9f5e233e36fbe9ea26011b3b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki_files/consent_220206_V3.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki_files/e66384bc40452c5452f33563fe0e27e803b0cc21" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki_files/favicon-96x96.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki_files/gpt.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki_files/jquery.min.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki_files/loader.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki_files/my.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki_files/native.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki_files/pubads_impl_2020100601.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki_files/qwerty.wiki.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki_files/saved_resource.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki_files/tag.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_apoio/implementando uma pilha em python.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_aulas/FIFO.LIFO.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,12 +73,13 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.ex010">
-    <configuration name="aula007e" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.aula002a">
+    <configuration name="aula001a" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Aprendendo_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -42,12 +87,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/_aulas" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/_ED" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_aulas/aula007e.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_ED/aula001a.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -56,7 +100,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ex007 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="aula001b" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Aprendendo_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -64,12 +108,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/_aulas" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/_ED" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_aulas/ex007.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_ED/aula001b.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -78,7 +121,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ex008" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="aula002a" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Aprendendo_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -86,12 +129,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/_aulas" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/_ED" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_aulas/ex008.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_ED/aula002a.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -100,7 +142,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ex009" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="ex013" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Aprendendo_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -112,8 +154,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_aulas/ex009.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_aulas/ex013.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -122,7 +163,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ex010" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="ex014" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Aprendendo_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -134,8 +175,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_aulas/ex010.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_aulas/ex014.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -146,11 +186,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.ex010" />
-        <item itemvalue="Python.ex009" />
-        <item itemvalue="Python.ex008" />
-        <item itemvalue="Python.aula007e" />
-        <item itemvalue="Python.ex007 (1)" />
+        <item itemvalue="Python.aula002a" />
+        <item itemvalue="Python.aula001b" />
+        <item itemvalue="Python.aula001a" />
+        <item itemvalue="Python.ex014" />
+        <item itemvalue="Python.ex013" />
       </list>
     </recent_temporary>
   </component>
@@ -179,55 +219,62 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="-1057" y="317" key="#Inspections" timestamp="1600976443456">
+      <screen x="-1366" y="275" width="1366" height="728" />
+    </state>
+    <state x="-1057" y="317" key="#Inspections/-1366.275.1366.728/0.0.1680.1010@-1366.275.1366.728" timestamp="1600976443456" />
+    <state x="-1003" y="375" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1602181686186">
+      <screen x="-1366" y="275" width="1366" height="728" />
+    </state>
+    <state x="-1003" y="375" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/-1366.275.1366.728/0.0.1680.1010@-1366.275.1366.728" timestamp="1602181686186" />
     <state x="462" y="119" key="FileChooserDialogImpl" timestamp="1600221385649">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="462" y="119" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1600221385649" />
-    <state width="1323" height="113" key="GridCell.Tab.0.bottom" timestamp="1600910320053">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1345" height="179" key="GridCell.Tab.0.bottom" timestamp="1602266953003">
+      <screen x="-1366" y="275" width="1366" height="728" />
     </state>
+    <state width="1345" height="179" key="GridCell.Tab.0.bottom/-1366.275.1366.728/0.0.1680.1010@-1366.275.1366.728" timestamp="1602266953003" />
     <state width="1323" height="113" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1600910320053" />
     <state width="1317" height="144" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1360.728@1366.0.1360.728" timestamp="1600474695285" />
-    <state width="1323" height="113" key="GridCell.Tab.0.center" timestamp="1600910320053">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1345" height="179" key="GridCell.Tab.0.center" timestamp="1602266953003">
+      <screen x="-1366" y="275" width="1366" height="728" />
     </state>
+    <state width="1345" height="179" key="GridCell.Tab.0.center/-1366.275.1366.728/0.0.1680.1010@-1366.275.1366.728" timestamp="1602266953003" />
     <state width="1323" height="113" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1600910320053" />
     <state width="1317" height="144" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1360.728@1366.0.1360.728" timestamp="1600474695285" />
-    <state width="1323" height="113" key="GridCell.Tab.0.left" timestamp="1600910320053">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1345" height="179" key="GridCell.Tab.0.left" timestamp="1602266953003">
+      <screen x="-1366" y="275" width="1366" height="728" />
     </state>
+    <state width="1345" height="179" key="GridCell.Tab.0.left/-1366.275.1366.728/0.0.1680.1010@-1366.275.1366.728" timestamp="1602266953003" />
     <state width="1323" height="113" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1600910320053" />
     <state width="1317" height="144" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1360.728@1366.0.1360.728" timestamp="1600474695284" />
-    <state width="1323" height="113" key="GridCell.Tab.0.right" timestamp="1600910320053">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1345" height="179" key="GridCell.Tab.0.right" timestamp="1602266953003">
+      <screen x="-1366" y="275" width="1366" height="728" />
     </state>
+    <state width="1345" height="179" key="GridCell.Tab.0.right/-1366.275.1366.728/0.0.1680.1010@-1366.275.1366.728" timestamp="1602266953003" />
     <state width="1323" height="113" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1600910320053" />
     <state width="1317" height="144" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1360.728@1366.0.1360.728" timestamp="1600474695285" />
-    <state x="184" y="9" key="SettingsEditor" timestamp="1600219120897">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="-1182" y="284" key="SettingsEditor" timestamp="1600976366278">
+      <screen x="-1366" y="275" width="1366" height="728" />
     </state>
+    <state x="-1182" y="284" key="SettingsEditor/-1366.275.1366.728/0.0.1680.1010@-1366.275.1366.728" timestamp="1600976366278" />
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1600219120897" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Aprendendo_Python$aula007a.coverage" NAME="aula007a Coverage Results" MODIFIED="1600225580669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_aulas" />
-    <SUITE FILE_PATH="coverage/Aprendendo_Python$ex005.coverage" NAME="ex005 Coverage Results" MODIFIED="1600477395704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_ED" />
-    <SUITE FILE_PATH="coverage/Aprendendo_Python$ex008.coverage" NAME="ex008 Coverage Results" MODIFIED="1600909528680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_aulas" />
-    <SUITE FILE_PATH="coverage/Aprendendo_Python$aula007d.coverage" NAME="aula007d Coverage Results" MODIFIED="1600224968419" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_aulas" />
-    <SUITE FILE_PATH="coverage/Aprendendo_Python$ex007.coverage" NAME="ex007 Coverage Results" MODIFIED="1600651473870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_ED" />
-    <SUITE FILE_PATH="coverage/Aprendendo_Python$ex007__1_.coverage" NAME="ex007 (1) Coverage Results" MODIFIED="1600902569649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_aulas" />
-    <SUITE FILE_PATH="coverage/Aprendendo_Python$ex006__1_.coverage" NAME="ex006 (1) Coverage Results" MODIFIED="1600902111867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_aulas" />
-    <SUITE FILE_PATH="coverage/Aprendendo_Python$aula007e.coverage" NAME="aula007e Coverage Results" MODIFIED="1600903119558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_aulas" />
-    <SUITE FILE_PATH="coverage/Aprendendo_Python$ex003.coverage" NAME="ex003 Coverage Results" MODIFIED="1600306126130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_ED" />
-    <SUITE FILE_PATH="coverage/Aprendendo_Python$ex006.coverage" NAME="ex006 Coverage Results" MODIFIED="1600577427248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_ED" />
-    <SUITE FILE_PATH="coverage/Aprendendo_Python$ex009.coverage" NAME="ex009 Coverage Results" MODIFIED="1600909987332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_aulas" />
-    <SUITE FILE_PATH="coverage/Aprendendo_Python$aula007b.coverage" NAME="aula007b Coverage Results" MODIFIED="1600224452067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_aulas" />
-    <SUITE FILE_PATH="coverage/Aprendendo_Python$ex004.coverage" NAME="ex004 Coverage Results" MODIFIED="1600476730052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_ED" />
-    <SUITE FILE_PATH="coverage/Aprendendo_Python$ex001.coverage" NAME="ex001 Coverage Results" MODIFIED="1600303027849" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_ED" />
-    <SUITE FILE_PATH="coverage/Aprendendo_Python$aula007c.coverage" NAME="aula007c Coverage Results" MODIFIED="1600224701238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_aulas" />
-    <SUITE FILE_PATH="coverage/Aprendendo_Python$ex010.coverage" NAME="ex010 Coverage Results" MODIFIED="1600910320023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_aulas" />
   </component>
 </project>
