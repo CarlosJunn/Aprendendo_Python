@@ -20,32 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e937b08-838f-4932-be7c-325e3d499a35" name="Default Changelist" comment="" />
-    <list default="true" id="1e937b08-838f-4932-be7c-325e3d499a35" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/_ED/aula001a.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_ED/aula001b.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_ED/aula002a.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_apoio/O tipo abstrato de dados pilha.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki_files/1x1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki_files/34109fe397fdcff370079185bfdb65826cb5565a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki_files/360_light.js.download" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki_files/a601995d55609f2d9f5e233e36fbe9ea26011b3b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki_files/consent_220206_V3.js.download" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki_files/e66384bc40452c5452f33563fe0e27e803b0cc21" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki_files/favicon-96x96.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki_files/gpt.js.download" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki_files/jquery.min.js.download" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki_files/loader.js.download" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki_files/my.js.download" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki_files/native.js.download" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki_files/pubads_impl_2020100601.js.download" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki_files/qwerty.wiki.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki_files/saved_resource.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_apoio/deque - Double-ended queue - qaz.wiki_files/tag.js.download" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_apoio/implementando uma pilha em python.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_aulas/FIFO.LIFO.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,6 +65,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_ED/aula001a.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -112,6 +87,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_ED/aula001b.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -133,6 +109,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_ED/aula002a.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -154,6 +131,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_aulas/ex013.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -175,6 +153,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_aulas/ex014.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -213,6 +192,7 @@
       <workItem from="1600648769361" duration="1375000" />
       <workItem from="1600899480760" duration="5037000" />
       <workItem from="1600995830186" duration="572000" />
+      <workItem from="1602434868581" duration="160000" />
     </task>
     <servers />
   </component>
