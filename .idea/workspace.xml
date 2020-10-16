@@ -19,7 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e937b08-838f-4932-be7c-325e3d499a35" name="Default Changelist" comment="" />
+    <list default="true" id="1e937b08-838f-4932-be7c-325e3d499a35" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/_ED/aula003.py.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_ED/ex008.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_apoio/FIFO.LIFO.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_apoio/operaçoes.lista.deck.pilha.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_aulas/FIFO.LIFO.pdf" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,7 +59,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.aula002a">
+  <component name="RunManager" selected="Python.ex008">
     <configuration name="aula001a" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Aprendendo_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -119,7 +126,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ex013" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="ex008" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Aprendendo_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -127,12 +134,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/_aulas" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/_ED" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_aulas/ex013.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_ED/ex008.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -141,7 +148,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ex014" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="tentandoEX2 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Aprendendo_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -149,12 +156,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/_aulas" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Desktop/apoio" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_aulas/ex014.py" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/Desktop/apoio/tentandoEX2 (1).py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -165,11 +172,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ex008" />
+        <item itemvalue="Python.tentandoEX2 (1)" />
         <item itemvalue="Python.aula002a" />
         <item itemvalue="Python.aula001b" />
         <item itemvalue="Python.aula001a" />
-        <item itemvalue="Python.ex014" />
-        <item itemvalue="Python.ex013" />
       </list>
     </recent_temporary>
   </component>
@@ -193,6 +200,7 @@
       <workItem from="1600899480760" duration="5037000" />
       <workItem from="1600995830186" duration="572000" />
       <workItem from="1602434868581" duration="160000" />
+      <workItem from="1602436673059" duration="8091000" />
     </task>
     <servers />
   </component>
@@ -227,28 +235,32 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="462" y="119" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1600221385649" />
-    <state width="1345" height="179" key="GridCell.Tab.0.bottom" timestamp="1602266953003">
-      <screen x="-1366" y="275" width="1366" height="728" />
+    <state width="1317" height="113" key="GridCell.Tab.0.bottom" timestamp="1602447934476">
+      <screen x="-1360" y="0" width="1360" height="728" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.bottom/-1366.275.1366.728/0.0.1680.1010@-1366.275.1366.728" timestamp="1602266953003" />
+    <state width="1317" height="113" key="GridCell.Tab.0.bottom/0.0.1366.728/-1360.0.1360.728@-1360.0.1360.728" timestamp="1602447934476" />
     <state width="1323" height="113" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1600910320053" />
     <state width="1317" height="144" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1360.728@1366.0.1360.728" timestamp="1600474695285" />
-    <state width="1345" height="179" key="GridCell.Tab.0.center" timestamp="1602266953003">
-      <screen x="-1366" y="275" width="1366" height="728" />
+    <state width="1317" height="113" key="GridCell.Tab.0.center" timestamp="1602447934475">
+      <screen x="-1360" y="0" width="1360" height="728" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.center/-1366.275.1366.728/0.0.1680.1010@-1366.275.1366.728" timestamp="1602266953003" />
+    <state width="1317" height="113" key="GridCell.Tab.0.center/0.0.1366.728/-1360.0.1360.728@-1360.0.1360.728" timestamp="1602447934475" />
     <state width="1323" height="113" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1600910320053" />
     <state width="1317" height="144" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1360.728@1366.0.1360.728" timestamp="1600474695285" />
-    <state width="1345" height="179" key="GridCell.Tab.0.left" timestamp="1602266953003">
-      <screen x="-1366" y="275" width="1366" height="728" />
+    <state width="1317" height="113" key="GridCell.Tab.0.left" timestamp="1602447934475">
+      <screen x="-1360" y="0" width="1360" height="728" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.left/-1366.275.1366.728/0.0.1680.1010@-1366.275.1366.728" timestamp="1602266953003" />
+    <state width="1317" height="113" key="GridCell.Tab.0.left/0.0.1366.728/-1360.0.1360.728@-1360.0.1360.728" timestamp="1602447934475" />
     <state width="1323" height="113" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1600910320053" />
     <state width="1317" height="144" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1360.728@1366.0.1360.728" timestamp="1600474695284" />
-    <state width="1345" height="179" key="GridCell.Tab.0.right" timestamp="1602266953003">
-      <screen x="-1366" y="275" width="1366" height="728" />
+    <state width="1317" height="113" key="GridCell.Tab.0.right" timestamp="1602447934476">
+      <screen x="-1360" y="0" width="1360" height="728" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.right/-1366.275.1366.728/0.0.1680.1010@-1366.275.1366.728" timestamp="1602266953003" />
+    <state width="1317" height="113" key="GridCell.Tab.0.right/0.0.1366.728/-1360.0.1360.728@-1360.0.1360.728" timestamp="1602447934476" />
     <state width="1323" height="113" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1600910320053" />
     <state width="1317" height="144" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1360.728@1366.0.1360.728" timestamp="1600474695285" />
     <state x="-1182" y="284" key="SettingsEditor" timestamp="1600976366278">
@@ -256,5 +268,9 @@
     </state>
     <state x="-1182" y="284" key="SettingsEditor/-1366.275.1366.728/0.0.1680.1010@-1366.275.1366.728" timestamp="1600976366278" />
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1600219120897" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Aprendendo_Python$ex008.coverage" NAME="ex008 Coverage Results" MODIFIED="1602446287807" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_ED" />
+    <SUITE FILE_PATH="coverage/Aprendendo_Python$tentandoEX2__1_.coverage" NAME="tentandoEX2 (1) Coverage Results" MODIFIED="1602437946076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop/apoio" />
   </component>
 </project>
