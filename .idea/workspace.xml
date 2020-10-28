@@ -20,15 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e937b08-838f-4932-be7c-325e3d499a35" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/_aulas/_Udemy_comentarios.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_aulas/_Udemy_condicionais_elif.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_aulas/_Udemy_condicional_else.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_aulas/_Udemy_condicional_if.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_aulas/_Udemy_repetição_for.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_aulas/_Udemy_repetição_for_in_range.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_aulas/_Udemy_repetição_while.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_aulas/_Udemy_strings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_aulas/_Udemy_strings_buscas_subestrings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_aulas/_Udemy_strings_metodos.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_aulas/_Udemy_strings_substituição.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_aulas/_Udemy_strings.py" beforeDir="false" afterPath="$PROJECT_DIR$/_aulas/_Udemy_strings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,48 +59,6 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager" selected="Python._Udemy_strings">
-    <configuration name="_Udemy_repetição_for" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Aprendendo_Python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/_aulas" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_aulas/_Udemy_repetição_for.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="_Udemy_repetição_for_in_range" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Aprendendo_Python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/_aulas" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_aulas/_Udemy_repetição_for_in_range.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="_Udemy_strings" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Aprendendo_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -117,7 +71,30 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_aulas/_Udemy_strings.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="_Udemy_strings_buscas_subestrings" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Aprendendo_Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/_aulas" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_aulas/_Udemy_strings_buscas_subestrings.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -138,6 +115,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_aulas/_Udemy_strings_concatenação.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -147,7 +125,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="_Udemy_strings_operações" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="_Udemy_strings_metodos" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Aprendendo_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -159,7 +137,30 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_aulas/_Udemy_strings_operações.py" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_aulas/_Udemy_strings_metodos.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="_Udemy_strings_substituição" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Aprendendo_Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/_aulas" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_aulas/_Udemy_strings_substituição.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -171,10 +172,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python._Udemy_strings" />
+        <item itemvalue="Python._Udemy_strings_substituição" />
+        <item itemvalue="Python._Udemy_strings_buscas_subestrings" />
+        <item itemvalue="Python._Udemy_strings_metodos" />
         <item itemvalue="Python._Udemy_strings_concatenação" />
-        <item itemvalue="Python._Udemy_strings_operações" />
-        <item itemvalue="Python._Udemy_repetição_for_in_range" />
-        <item itemvalue="Python._Udemy_repetição_for" />
       </list>
     </recent_temporary>
   </component>
@@ -200,6 +201,10 @@
       <workItem from="1602434868581" duration="160000" />
       <workItem from="1602436673059" duration="8091000" />
       <workItem from="1602883439339" duration="1382000" />
+      <workItem from="1603852858814" duration="130000" />
+      <workItem from="1603853152251" duration="591000" />
+      <workItem from="1603855807128" duration="1680000" />
+      <workItem from="1603858000406" duration="759000" />
     </task>
     <servers />
   </component>
@@ -234,27 +239,31 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="462" y="119" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1600221385649" />
-    <state width="1345" height="179" key="GridCell.Tab.0.bottom" timestamp="1603823489206">
-      <screen x="-1366" y="275" width="1366" height="728" />
+    <state width="1323" height="113" key="GridCell.Tab.0.bottom" timestamp="1603857513949">
+      <screen x="-1366" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="113" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1360.728@-1366.0.1366.728" timestamp="1603857513949" />
     <state width="1345" height="179" key="GridCell.Tab.0.bottom/-1366.275.1366.728/0.0.1680.1010@-1366.275.1366.728" timestamp="1603823489206" />
     <state width="1323" height="113" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1600910320053" />
     <state width="1317" height="144" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1360.728@1366.0.1360.728" timestamp="1600474695285" />
-    <state width="1345" height="179" key="GridCell.Tab.0.center" timestamp="1603823489206">
-      <screen x="-1366" y="275" width="1366" height="728" />
+    <state width="1323" height="113" key="GridCell.Tab.0.center" timestamp="1603857513948">
+      <screen x="-1366" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="113" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1360.728@-1366.0.1366.728" timestamp="1603857513948" />
     <state width="1345" height="179" key="GridCell.Tab.0.center/-1366.275.1366.728/0.0.1680.1010@-1366.275.1366.728" timestamp="1603823489206" />
     <state width="1323" height="113" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1600910320053" />
     <state width="1317" height="144" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1360.728@1366.0.1360.728" timestamp="1600474695285" />
-    <state width="1345" height="179" key="GridCell.Tab.0.left" timestamp="1603823489206">
-      <screen x="-1366" y="275" width="1366" height="728" />
+    <state width="1323" height="113" key="GridCell.Tab.0.left" timestamp="1603857513948">
+      <screen x="-1366" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="113" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1360.728@-1366.0.1366.728" timestamp="1603857513948" />
     <state width="1345" height="179" key="GridCell.Tab.0.left/-1366.275.1366.728/0.0.1680.1010@-1366.275.1366.728" timestamp="1603823489206" />
     <state width="1323" height="113" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1600910320053" />
     <state width="1317" height="144" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1360.728@1366.0.1360.728" timestamp="1600474695284" />
-    <state width="1345" height="179" key="GridCell.Tab.0.right" timestamp="1603823489206">
-      <screen x="-1366" y="275" width="1366" height="728" />
+    <state width="1323" height="113" key="GridCell.Tab.0.right" timestamp="1603857513948">
+      <screen x="-1366" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="113" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1360.728@-1366.0.1366.728" timestamp="1603857513948" />
     <state width="1345" height="179" key="GridCell.Tab.0.right/-1366.275.1366.728/0.0.1680.1010@-1366.275.1366.728" timestamp="1603823489206" />
     <state width="1323" height="113" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1600910320053" />
     <state width="1317" height="144" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1360.728@1366.0.1360.728" timestamp="1600474695285" />
@@ -263,5 +272,11 @@
     </state>
     <state x="-1182" y="284" key="SettingsEditor/-1366.275.1366.728/0.0.1680.1010@-1366.275.1366.728" timestamp="1600976366278" />
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1600219120897" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Aprendendo_Python$_Udemy_strings_substituição.coverage" NAME="_Udemy_strings_substituição Coverage Results" MODIFIED="1603857513930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_aulas" />
+    <SUITE FILE_PATH="coverage/Aprendendo_Python$_Udemy_strings_metodos.coverage" NAME="_Udemy_strings_metodos Coverage Results" MODIFIED="1603856698873" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_aulas" />
+    <SUITE FILE_PATH="coverage/Aprendendo_Python$_Udemy_strings.coverage" NAME="_Udemy_strings Coverage Results" MODIFIED="1603858885614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_aulas" />
+    <SUITE FILE_PATH="coverage/Aprendendo_Python$_Udemy_strings_buscas_subestrings.coverage" NAME="_Udemy_strings_buscas_subestrings Coverage Results" MODIFIED="1603857194526" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_aulas" />
   </component>
 </project>
