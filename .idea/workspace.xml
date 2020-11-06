@@ -19,13 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e937b08-838f-4932-be7c-325e3d499a35" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/_aulas/_Udemy_strings_buscas_subestrings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_aulas/_Udemy_strings_metodos.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_aulas/_Udemy_strings_substituição.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_aulas/_Udemy_strings.py" beforeDir="false" afterPath="$PROJECT_DIR$/_aulas/_Udemy_strings.py" afterDir="false" />
-    </list>
+    <list default="true" id="1e937b08-838f-4932-be7c-325e3d499a35" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -204,7 +198,7 @@
       <workItem from="1603852858814" duration="130000" />
       <workItem from="1603853152251" duration="591000" />
       <workItem from="1603855807128" duration="1680000" />
-      <workItem from="1603858000406" duration="759000" />
+      <workItem from="1603858000406" duration="1527000" />
     </task>
     <servers />
   </component>
